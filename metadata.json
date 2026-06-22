@@ -1,0 +1,6 @@
+{
+  "name": "Sally Home Connect",
+  "description": "La domotique locale, libre et sans abonnement. Prenez le contrôle de votre maison de manière sécurisée et locale.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
