@@ -7,6 +7,7 @@ import React, { useState } from 'react';
 import { motion } from 'motion/react';
 import {
   ArrowRight,
+  Download,
   Home,
   LockKeyhole,
   Radio,
@@ -231,19 +232,29 @@ export default function Accueil({
               </p>
             </div>
 
-            <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-4">
-              <button 
-                onClick={() => onChangePage('propos')}
-                className="px-8 py-4 bg-indigo-600 hover:bg-indigo-500 active:scale-[0.98] text-white font-semibold rounded-xl text-base shadow-lg shadow-indigo-600/20 transition-all text-center cursor-pointer"
-              >
-                Découvrir Sally
-              </button>
-              <button 
-                onClick={() => onChangePage('solutions')}
-                className="px-8 py-4 bg-slate-900 hover:bg-slate-850 active:scale-[0.98] border border-slate-800 text-slate-200 hover:text-white font-semibold rounded-xl text-base transition-all text-center cursor-pointer"
-              >
-                Voir la démo
-              </button>
+            <div className="space-y-4">
+              <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-4">
+                <a
+                  href="https://github.com/thierrypug/Sally-Home-Connect-Windows-Beta/releases"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="px-8 py-4 bg-emerald-600 hover:bg-emerald-500 active:scale-[0.98] text-white font-semibold rounded-xl text-base shadow-lg shadow-emerald-600/20 transition-all text-center cursor-pointer inline-flex items-center justify-center gap-2"
+                >
+                  <Download className="w-5 h-5" />
+                  Télécharger la bêta Windows
+                </a>
+
+                <button
+                  onClick={() => onChangePage('propos')}
+                  className="px-8 py-4 bg-slate-900 hover:bg-slate-850 active:scale-[0.98] border border-slate-800 text-slate-200 hover:text-white font-semibold rounded-xl text-base transition-all text-center cursor-pointer"
+                >
+                  Découvrir Sally
+                </button>
+              </div>
+
+              <p className="text-sm text-slate-500">
+                Bêta Windows 10/11 • essai gratuit 60 jours • fonctionnement local • aucun compte requis
+              </p>
             </div>
 
             {/* Premium assurances badges */}
@@ -960,19 +971,29 @@ export default function Accueil({
 
           <div className="max-w-2xl mx-auto space-y-4 relative z-10">
             <h2 className="text-3xl sm:text-4xl font-display font-medium text-slate-100 leading-tight">
-              Prêt à découvrir <span className="font-bold text-indigo-400">Sally Home Connect</span> ?
+              Testez <span className="font-bold text-indigo-400">Sally Home Connect</span> sur Windows
             </h2>
             <p className="text-slate-400 font-light max-w-lg mx-auto">
-              Une domotique de confiance, simpliste, locale et de haute longévité conçue uniquement pour sécuriser et valoriser votre foyer.
+              La bêta Windows est disponible gratuitement pendant 60 jours. Téléchargez-la depuis notre dépôt GitHub officiel et découvrez Sally directement sur votre ordinateur.
             </p>
           </div>
 
-          <div className="flex justify-center relative z-10">
-            <button 
-              onClick={() => onOpenCheckout('Licence Sally OS', 79)}
-              className="px-10 py-4 bg-indigo-600 hover:bg-indigo-500 active:scale-[0.98] text-white font-bold rounded-xl shadow-lg shadow-indigo-600/30 transition-all cursor-pointer flex items-center gap-3"
+          <div className="flex flex-col sm:flex-row justify-center items-center gap-4 relative z-10">
+            <a
+              href="https://github.com/thierrypug/Sally-Home-Connect-Windows-Beta/releases"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="px-10 py-4 bg-indigo-600 hover:bg-indigo-500 active:scale-[0.98] text-white font-bold rounded-xl shadow-lg shadow-indigo-600/30 transition-all cursor-pointer inline-flex items-center gap-3"
             >
-              <span>Réserver mon accès</span>
+              <Download className="w-5 h-5" />
+              <span>Télécharger la bêta Windows</span>
+            </a>
+
+            <button
+              onClick={() => onChangePage('solutions')}
+              className="px-10 py-4 bg-slate-900 hover:bg-slate-800 active:scale-[0.98] border border-slate-800 text-slate-200 hover:text-white font-semibold rounded-xl transition-all cursor-pointer inline-flex items-center gap-3"
+            >
+              <span>Découvrir les fonctionnalités</span>
               <ArrowRight className="w-5 h-5" />
             </button>
           </div>
