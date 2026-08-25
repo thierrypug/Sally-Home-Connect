@@ -48,22 +48,22 @@ export default function APropos({ onChangePage }: AProposProps) {
     {
       icon: <CloudOff className="w-5 h-5 text-indigo-400" />,
       title: "Dépendance au cloud",
-      desc: "Vos données stockées sur des serveurs distants, hors de votre contrôle."
+      desc: "Certaines solutions stockent des données sur des serveurs distants et dépendent d’une connexion Internet."
     },
     {
       icon: <Wallet className="w-5 h-5 text-indigo-400" />,
-      title: "Abonnements coûteux",
-      desc: "Des frais récurrents qui s'accumulent sans jamais vous appartenir."
+      title: "Abonnements récurrents",
+      desc: "Certaines solutions nécessitent des frais mensuels ou annuels pour accéder à tout ou partie de leurs services."
     },
     {
       icon: <Sliders className="w-5 h-5 text-indigo-400" />,
       title: "Complexité inutile",
-      desc: "Des interfaces techniques, conçues pour des experts, pas pour le quotidien."
+      desc: "Certaines interfaces peuvent demander des connaissances techniques ou multiplier les applications."
     },
     {
       icon: <EyeOff className="w-5 h-5 text-indigo-400" />,
       title: "Manque de confidentialité",
-      desc: "Vos habitudes et votre vie privée exploitées à des fins commerciales."
+      desc: "Selon les services utilisés, certaines données liées aux usages du logement peuvent être traitées à distance."
     }
   ];
 
@@ -71,13 +71,13 @@ export default function APropos({ onChangePage }: AProposProps) {
   const solutions = [
     {
       icon: <Database className="w-5 h-5 text-cyan-400" />,
-      title: "100% locale, 100% privée",
-      desc: "Vos données restent chez vous, sur votre réseau local. Aucun cloud, aucune dépendance."
+      title: "100 % locale",
+      desc: "Le pilotage et les données de fonctionnement restent sur votre réseau local, sans cloud nécessaire au fonctionnement courant."
     },
     {
       icon: <ShieldCheck className="w-5 h-5 text-cyan-400" />,
-      title: "Achat unique",
-      desc: "Payez une fois, utilisez à vie. Zéro abonnement, zéro surprise."
+      title: "Sans abonnement",
+      desc: "Sally Home Connect est conçue pour fonctionner sans abonnement mensuel obligatoire."
     },
     {
       icon: <Sparkles className="w-5 h-5 text-cyan-400" />,
@@ -87,7 +87,7 @@ export default function APropos({ onChangePage }: AProposProps) {
     {
       icon: <Unlock className="w-5 h-5 text-cyan-400" />,
       title: "Sécurité et liberté",
-      desc: "Vous gardez le contrôle total sur votre maison et vos informations."
+      desc: "Vous conservez la maîtrise de votre installation et de son fonctionnement local."
     }
   ];
 
@@ -105,13 +105,13 @@ export default function APropos({ onChangePage }: AProposProps) {
     },
     {
       icon: <Layers className="w-5 h-5 text-indigo-400" />,
-      title: "Compatibilité maximale",
-      desc: "Zigbee, EnOcean, Wi-Fi, MQTT..."
+      title: "Technologies compatibles",
+      desc: "Zigbee et EnOcean"
     },
     {
       icon: <RefreshCw className="w-5 h-5 text-indigo-400" />,
       title: "Évolutif et durable",
-      desc: "Mises à jour régulières et gratuites"
+      desc: "Une solution conçue pour évoluer"
     }
   ];
 
@@ -167,7 +167,7 @@ export default function APropos({ onChangePage }: AProposProps) {
             {/* Dusk Villa background - brightened to beautiful rendering */}
             <img 
               src={HERO_HOUSE_IMAGE} 
-              alt="Villa de luxe avec Sally Connect" 
+              alt="Maison connectée avec Sally Home Connect" 
               className="absolute inset-0 w-full h-full object-cover brightness-[0.8] saturate-[1.3] select-none transition-transform duration-[6s] group-hover:scale-[1.02]"
             />
 
@@ -371,8 +371,8 @@ export default function APropos({ onChangePage }: AProposProps) {
             </div>
 
             <div className="pt-8 border-t border-slate-900/60 mt-8 flex justify-between items-center text-[10px] font-mono text-slate-500">
-              <span>SOUVERAINETÉ COMPLÈTE</span>
-              <span className="text-cyan-400 animate-pulse">● PROTOCOLES SÉCURISÉS</span>
+              <span>FONCTIONNEMENT LOCAL</span>
+              <span className="text-cyan-400 animate-pulse">● ZIGBEE & ENOCEAN</span>
             </div>
           </div>
 
@@ -389,8 +389,8 @@ export default function APropos({ onChangePage }: AProposProps) {
               </div>
 
               <div className="pt-6 border-t border-slate-900 mt-6 flex items-center justify-between text-[10px] font-mono text-slate-500">
-                <span>VALEURS HÉBERGÉES</span>
-                <span>ZÉRO CLOUD</span>
+                <span>DONNÉES LOCALES</span>
+                <span>SANS CLOUD REQUIS</span>
               </div>
             </div>
 
@@ -461,7 +461,7 @@ export default function APropos({ onChangePage }: AProposProps) {
               <span className="text-transparent bg-clip-text bg-linear-to-r from-purple-400 to-indigo-400 font-extrabold">Sally Home Connect sur Raspberry Pi</span>
             </h2>
             <p className="text-slate-400 text-sm sm:text-base font-light max-w-3xl leading-relaxed">
-              Devenez totalement souverain en hébergeant votre propre centrale locale d'intelligence domotique. Suivez ces étapes simples pour configurer votre Raspberry Pi avec notre système local 100% privé.
+              Hébergez votre installation domotique directement sur votre réseau local. Ce guide présente les principales étapes de préparation et de configuration de Sally Home Connect sur Raspberry Pi.
             </p>
           </div>
 
@@ -496,10 +496,10 @@ export default function APropos({ onChangePage }: AProposProps) {
                 
                 <h3 className="text-lg font-bold text-white flex items-center gap-2">
                   <FileText className="w-5 h-5 text-purple-400" />
-                  Hébergement Local
+                  Hébergement local
                 </h3>
                 <p className="text-xs text-slate-400 leading-relaxed font-light">
-                  L'image système fournie configure un système d'exploitation minimaliste et durci, optimisé pour exécuter Sally Home de manière ininterrompue et ultra-sécurisée.
+                  L’image système est prévue pour exécuter Sally Home Connect localement sur un Raspberry Pi dédié.
                 </p>
 
                 <div className="border-t border-slate-900 pt-4 space-y-3 font-mono text-xs">
@@ -513,11 +513,11 @@ export default function APropos({ onChangePage }: AProposProps) {
                   </div>
                   <div className="flex justify-between items-center text-slate-500">
                     <span>Licence :</span>
-                    <span className="text-emerald-400 font-bold">Achat Unique</span>
+                    <span className="text-emerald-400 font-bold">Sans abonnement</span>
                   </div>
                   <div className="flex justify-between items-center text-slate-500">
                     <span>Mises à jour :</span>
-                    <span className="text-purple-400 font-bold">Gratuites à vie</span>
+                    <span className="text-purple-400 font-bold">Selon version</span>
                   </div>
                 </div>
               </div>
@@ -528,7 +528,7 @@ export default function APropos({ onChangePage }: AProposProps) {
                 <div className="space-y-1">
                   <h4 className="text-xs font-bold text-amber-400">Règle de sécurité physique</h4>
                   <p className="text-[11px] text-slate-400 leading-relaxed font-light">
-                    Ne débranchez jamais l'alimentation pendant le flash ou le premier démarrage. Branchez toujours vos accessoires radio EnOcean ou Zigbee avec le Pi hors tension.
+                    Ne coupez pas l’alimentation pendant le premier démarrage. Pour l’installation des interfaces radio EnOcean et Zigbee, éteignez proprement le Raspberry Pi avant de les raccorder.
                   </p>
                 </div>
               </div>
@@ -550,8 +550,8 @@ export default function APropos({ onChangePage }: AProposProps) {
                     </p>
                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
                       {[
-                        { title: "Un Raspberry Pi 3 ou Raspberry Pi 4", desc: "La base matérielle de votre passerelle locale." },
-                        { title: "Une carte microSD compatible", desc: "16 Go min pour Raspberry Pi 3, ou 32 Go min pour un RPi 4." },
+                        { title: "Un Raspberry Pi compatible", desc: "La base matérielle de votre passerelle locale." },
+                        { title: "Une carte microSD compatible", desc: "Une capacité adaptée à l’image système utilisée." },
                         { title: "Une alimentation adaptée", desc: "Stable pour éviter les baisses de tension." },
                         { title: "Un câble réseau Ethernet", desc: "Pour relier le Pi à votre box Internet ou routeur." },
                         { title: "Une box Internet ou routeur", desc: "Pour la mise en réseau de vos interfaces." },
@@ -575,7 +575,7 @@ export default function APropos({ onChangePage }: AProposProps) {
                       <h4 className="text-base font-bold text-white">Télécharger Sally Home Connect</h4>
                     </div>
                     <p className="text-slate-400 text-xs sm:text-sm font-light leading-relaxed pl-1 pt-1">
-                      Téléchargez l'image système Sally Home Connect depuis le site officiel de support. 
+                      Téléchargez l’image système Sally Home Connect depuis la source de distribution prévue pour votre version. 
                       Conservez précieusement le fichier téléchargé <span className="text-slate-350 font-bold">(au format .img ou compressé)</span> sur l'ordinateur qui servira à réaliser le flash.
                     </p>
                   </div>
@@ -597,8 +597,8 @@ export default function APropos({ onChangePage }: AProposProps) {
                         <li>Lancez l'utilitaire <span className="text-white font-bold">Win32 Disk Imager</span> avec les privilèges administrateur.</li>
                         <li>Sélectionnez le fichier image Sally Home Connect téléchargé précédemment sur votre disque dur.</li>
                         <li>Dans le menu déroulant, sélectionnez méticuleusement la lettre de lecteur correspondant à votre carte microSD.</li>
-                        <li>Cliquez sur le bouton géant <span className="text-purple-350 font-black">Write</span>.</li>
-                        <li>Attendez sagement la notification de fin complète de l'écriture sans déconnecter le matériel.</li>
+                        <li>Cliquez sur le bouton <span className="text-purple-350 font-black">Write</span>.</li>
+                        <li>Attendez la fin complète de l’écriture sans déconnecter la carte.</li>
                       </ol>
 
                       <div className="p-3 bg-red-500/10 border border-red-500/20 rounded-xl flex items-center gap-3 mt-4 text-[11px] text-red-350 font-light">
@@ -621,7 +621,7 @@ export default function APropos({ onChangePage }: AProposProps) {
                       <ul className="list-disc pl-5 text-xs font-light text-slate-300 space-y-1 leading-relaxed">
                         <li>Retirez proprement la carte microSD de votre ordinateur en utilisant l'éjection sécurisée du système.</li>
                         <li>Insérez-la fermement dans l'emplacement arrière prévu sur le Raspberry Pi.</li>
-                        <li>Raccordez un câble réseau Ethernet blindé RJ45 entre votre box Internet ou routeur et le port réseau du Raspberry Pi.</li>
+                        <li>Raccordez un câble réseau Ethernet RJ45 entre votre box Internet ou routeur et le port réseau du Raspberry Pi.</li>
                         <li>Branchez enfin l'alimentation du Raspberry Pi.</li>
                       </ul>
                       <p className="text-emerald-400 text-xs font-medium pl-1">
@@ -637,20 +637,20 @@ export default function APropos({ onChangePage }: AProposProps) {
                       <h4 className="text-base font-bold text-white">Premier démarrage</h4>
                     </div>
                     <p className="text-slate-400 text-xs sm:text-sm font-light leading-relaxed pl-1">
-                      Lors du tout premier branchement, Sally Home Connect procède de manière autonome à l'expansion du système de fichiers et effectue automatiquement sa configuration interne globale. Cette opération automatique de boot peut prendre plusieurs minutes.
+                      Lors du premier démarrage, le système peut effectuer plusieurs opérations d’initialisation. Cette phase peut prendre quelques minutes.
                     </p>
 
                     <div className="p-4 bg-slate-900/50 border border-slate-900 rounded-xl space-y-2">
-                      <span className="text-[10px] font-mono text-purple-400 font-bold block">Pendant cette phase : :</span>
+                      <span className="text-[10px] font-mono text-purple-400 font-bold block">Pendant cette phase :</span>
                       <ul className="list-disc pl-5 text-xs text-slate-300 space-y-1 leading-relaxed font-light">
-                        <li>Ne débranchez sous aucun prétexte l'alimentation électrique.</li>
+                        <li>Ne coupez pas l’alimentation électrique.</li>
                         <li>Ne retirez pas la carte microSD.</li>
-                        <li>Attendez tranquillement que le système soit complètement stabilisé et démarré.</li>
+                        <li>Attendez que le système ait terminé son démarrage.</li>
                       </ul>
                     </div>
 
                     <p className="text-slate-400 text-xs sm:text-sm font-light leading-relaxed pl-1 border-l-2 border-purple-500 ml-1">
-                      Une fois l'installation complètement terminée, votre serveur de domotique locale Sally Home Connect est prêt à être configuré.
+                      Une fois le démarrage terminé, Sally Home Connect peut être configuré.
                     </p>
 
                     <div className="pt-4 flex justify-between items-center text-xs text-purple-400 font-bold font-mono">
@@ -682,7 +682,7 @@ export default function APropos({ onChangePage }: AProposProps) {
                       https://192.168.1.200
                     </div>
                     <p className="text-slate-450 text-xs pl-1 font-light leading-relaxed">
-                      Pour pouvoir accéder à l'interface graphique unifiée de Sally Home, votre ordinateur ou tablette de configuration doit obligatoirement utiliser le même plan d'adressage IP local (ex. 192.168.1.xxx).
+                      Pour accéder à l’interface de Sally Home Connect à cette adresse, votre ordinateur ou votre tablette doit être connecté au même réseau local et utiliser un adressage compatible.
                     </p>
                   </div>
 
@@ -707,13 +707,13 @@ export default function APropos({ onChangePage }: AProposProps) {
                       </ol>
 
                       <div className="p-3.5 bg-slate-900/60 rounded-xl space-y-1 text-left border border-slate-900 mt-2">
-                        <span className="text-[10px] text-slate-500 uppercase font-mono block">Exemple de retour : :</span>
+                        <span className="text-[10px] text-slate-500 uppercase font-mono block">Exemple de retour :</span>
                         <div className="text-cyan-450 text-xs pl-1 font-bold">Passerelle par défaut . . . . . . . . . : 192.168.1.1</div>
                       </div>
                     </div>
 
                     <p className="text-emerald-400 text-xs font-semibold pl-1">
-                      ✔ Si votre passerelle est de type 192.168.1.x, aucune modification n'est nécessaire.
+                      ✔ Si votre réseau local utilise la plage 192.168.1.x, l’adresse par défaut peut être utilisée directement.
                     </p>
                   </div>
 
@@ -737,7 +737,7 @@ export default function APropos({ onChangePage }: AProposProps) {
                         ⚠️ Alerte de certificat SSL
                       </span>
                       <p className="text-slate-400 text-[11px] font-light leading-relaxed">
-                        Une alerte de confiance ou de sécurité peut apparaître lors de votre toute première connexion, indiquant "La connexion n'est pas privée". Ceci est parfaitement normal puisque l'appareil n'utilise aucun serveur DNS public et résout tout localement. Cliquez simplement sur <span className="text-white font-bold">Paramètres avancés</span> puis <span className="text-white font-bold">Continuer vers le site</span>.
+                        Une alerte de certificat peut apparaître lors de la première connexion si Sally Home Connect utilise un certificat local ou auto-signé. Vérifiez que vous accédez bien à l’adresse locale de votre installation, puis utilisez <span className="text-white font-bold">Paramètres avancés</span> puis <span className="text-white font-bold">Continuer vers le site</span>.
                       </p>
                     </div>
                   </div>
@@ -746,7 +746,7 @@ export default function APropos({ onChangePage }: AProposProps) {
                   <div className="space-y-3 pt-6 border-t border-slate-900">
                     <h4 className="text-base font-bold text-white">Cas particulier</h4>
                     <p className="text-slate-400 text-xs sm:text-sm font-light leading-relaxed pl-1">
-                      Si votre box utilise un autre réseau d'IP privées que le standard 192.168.1.x <span className="text-slate-300 font-bold">(par exemple 192.168.0.x ou 192.168.10.x)</span>, Sally Home Connect ne sera pas immédiatement accessible sur l'adresse par défaut. Dans ce cas particulier, veuillez consulter le chapitre de dépannage alternatif « Modification de l'adresse IP de Sally Home Connect » dans votre documentation imprimée ou contactez notre support technique dévoué.
+                      Si votre box utilise une autre plage d’adresses privées que 192.168.1.x <span className="text-slate-300 font-bold">(par exemple 192.168.0.x ou 192.168.10.x)</span>, Sally Home Connect ne sera pas immédiatement accessible sur l'adresse par défaut. Dans ce cas particulier, veuillez consulter le chapitre de dépannage alternatif « Modification de l'adresse IP de Sally Home Connect » dans votre documentation imprimée ou consultez la documentation de configuration réseau.
                     </p>
                   </div>
 
@@ -769,7 +769,7 @@ export default function APropos({ onChangePage }: AProposProps) {
                       Sally Home Connect configure alors automatiquement les paramètres réseau nécessaires. Une fois la configuration d'adressage terminée, l'adresse de connexion unique est affichée en gros caractères sous forme de texte ou de QR Code à l'écran.
                     </p>
                     <p className="text-emerald-400 text-xs font-semibold pl-1">
-                      ✔ Depuis n'importe quel ordinateur, tablette ou smartphone connecté au même réseau, saisissez simplement cette adresse dans votre navigateur local pour démarrer votre interface d'habitation autonome.
+                      ✔ Depuis un ordinateur, une tablette ou un smartphone connecté au même réseau local, saisissez cette adresse dans votre navigateur pour accéder à Sally Home Connect.
                     </p>
                   </div>
 
@@ -785,7 +785,7 @@ export default function APropos({ onChangePage }: AProposProps) {
                       <span className="text-purple-400">●</span> Chapitre 3 – Matériel complémentaire
                     </h3>
                     <p className="text-slate-300 text-sm font-light leading-relaxed">
-                      Pour pouvoir communiquer avec les différents équipements domotiques de votre logement, l'architecture locale Sally Home Connect nécessite l'ajout d'interfaces réseau physiques adaptées aux technologies radio sans fil de votre choix.
+                      Pour pouvoir communiquer avec les différents équipements domotiques de votre logement, l'architecture locale Sally Home Connect nécessite l'ajout d'interfaces USB adaptées aux technologies radio utilisées.
                     </p>
                   </div>
 
@@ -796,11 +796,11 @@ export default function APropos({ onChangePage }: AProposProps) {
                       <h4 className="text-sm font-bold text-slate-200 uppercase tracking-wide">Dongle USB EnOcean</h4>
                     </div>
                     <p className="text-slate-400 text-xs leading-relaxed font-light">
-                      Si vous utilisez des équipements radio autonomes <span className="text-white font-medium">EnOcean</span> (interrupteurs sans pile à récupération d'énergie mécanique, capteurs de température, poignées de fenêtres ou modules de commande discrets), vous devez obligatoirement disposer d'un dongle USB EnOcean compatible.
+                      Si vous utilisez des équipements radio autonomes <span className="text-white font-medium">EnOcean</span> (interrupteurs sans pile à récupération d'énergie mécanique, capteurs de température, poignées de fenêtres ou modules de commande discrets), vous devez disposer d’un dongle USB EnOcean compatible avec Sally Home Connect.
                     </p>
                     <ul className="list-disc text-slate-450 text-[11px] pl-5 space-y-1 font-mono">
-                      <li>Le dongle se branche directement à chaud ou à froid sur un port USB disponible du Raspberry Pi.</li>
-                      <li>Il permet à Sally Home Connect de décoder en temps réel les ondes EnOcean ultra-basses fréquences.</li>
+                      <li>Raccordez le dongle à un port USB disponible lorsque le Raspberry Pi est hors tension, puis redémarrez le système.</li>
+                      <li>Il permet à Sally Home Connect de recevoir les télégrammes radio EnOcean des équipements compatibles.</li>
                     </ul>
                   </div>
 
@@ -811,11 +811,11 @@ export default function APropos({ onChangePage }: AProposProps) {
                       <h4 className="text-sm font-bold text-slate-200 uppercase tracking-wide">Passerelle USB Zigbee</h4>
                     </div>
                     <p className="text-slate-400 text-xs leading-relaxed font-light">
-                      Si vous utilisez des équipements radio maillés <span className="text-white font-medium">Zigbee</span> (ampoules colorées Philips Hue ou IKEA, prises gigognes, capteurs de présence de sécurité, vannes de radiateurs, thermostats de chauffage), vous devez brancher une passerelle ou clé Zigbee USB compatible.
+                      Si vous utilisez des équipements radio maillés <span className="text-white font-medium">Zigbee</span> (ampoules colorées Philips Hue ou IKEA, prises gigognes, capteurs de présence de sécurité, vannes de radiateurs, thermostats de chauffage), vous devez utiliser une passerelle ou une clé Zigbee USB compatible avec Sally Home Connect.
                     </p>
                     <ul className="list-disc text-slate-450 text-[11px] pl-5 space-y-1 font-mono">
                       <li>La passerelle Zigbee se branche également sur un autre port USB du Raspberry Pi.</li>
-                      <li>Elle sert de coordinateur de clé réseau radio local pour Sally Home.</li>
+                      <li>Elle assure le rôle de coordinateur du réseau Zigbee local.</li>
                     </ul>
                   </div>
 
@@ -823,16 +823,16 @@ export default function APropos({ onChangePage }: AProposProps) {
                   <div className="space-y-3 pt-6 border-t border-slate-900">
                     <h4 className="text-base font-bold text-white">Utilisation simultanée des technologies</h4>
                     <p className="text-slate-400 text-xs sm:text-sm font-light leading-relaxed pl-1">
-                      L'un des avantages de notre système local est que <span className="text-white font-medium">Sally Home Connect</span> peut exploiter simultanément EnOcean et Zigbee au sein de la même pièce de vie. Vous êtes entièrement libre de combiner les fabricants majeurs d'interrupteurs auto-alimentés sans pile avec les éclairages Zigbee.
+                      L'un des avantages de notre système local est que <span className="text-white font-medium">Sally Home Connect</span> peut exploiter simultanément EnOcean et Zigbee au sein de la même pièce de vie. Cela permet, selon les équipements compatibles, d’associer des commandes EnOcean sans pile à des équipements Zigbee.
                     </p>
 
                     <div className="p-4 bg-slate-900/35 border border-slate-900 rounded-xl space-y-2">
                       <span className="text-[10px] font-mono text-cyan-400 font-extrabold uppercase">Exemple d'association locale fluide :</span>
                       <ul className="list-disc pl-5 text-[11px] text-slate-350 space-y-1 font-light leading-relaxed">
-                        <li><strong>Interrupteurs physiques EnOcean sans pile :</strong> fixés au mur sans aucun trou ni passage de câbles pour commander les va-et-vient de la maison.</li>
-                        <li><strong>Éclairages intelligents Zigbee :</strong> offrant des variations de nuances ou de couleurs chaleureuses.</li>
-                        <li><strong>Prises connectées Zigbee :</strong> pour mesurer les veilles électriques ou désactiver les appareils sensibles.</li>
-                        <li><strong>Capteurs de sécurité EnOcean :</strong> surveillant silencieusement les ouvertures.</li>
+                        <li><strong>Interrupteurs physiques EnOcean sans pile :</strong> pouvant être installés sans câblage électrique pour commander des équipements compatibles.</li>
+                        <li><strong>Éclairages intelligents Zigbee :</strong> permettant, selon le modèle, la variation d’intensité ou de couleur.</li>
+                        <li><strong>Prises connectées Zigbee :</strong> pour commander des appareils et, selon le modèle, suivre leur consommation.</li>
+                        <li><strong>Capteurs de sécurité EnOcean :</strong> permettant de détecter l’état d’une ouverture lorsqu’ils sont compatibles.</li>
                       </ul>
                     </div>
                   </div>
@@ -843,8 +843,8 @@ export default function APropos({ onChangePage }: AProposProps) {
                     <div className="bg-slate-950 p-5 rounded-2xl border border-slate-850 font-mono text-xs text-slate-300 space-y-2 shadow-inner">
                       <div className="text-[10px] text-purple-400 font-bold uppercase tracking-wider mb-2">PROCÉDURE MATÉRIELLE PHYSIQUE</div>
                       <ol className="list-decimal pl-4 space-y-1 text-slate-400 font-light leading-relaxed">
-                        <li>Éteignez proprement votre Raspberry Pi (via le bouton d'extinction logicielle dans la console ou en retirant l'alim).</li>
-                        <li>Branchez le dongle EnOcean choisi sur un port USB disponible du boitier.</li>
+                        <li>Éteignez proprement le Raspberry Pi depuis le système, puis attendez l’arrêt complet avant de débrancher son alimentation.</li>
+                        <li>Branchez le dongle EnOcean choisi sur un port USB disponible du boîtier.</li>
                         <li>Branchez la clé passerelle Zigbee sur un autre port USB (utiliser de préférence une rallonge pour éloigner les signaux).</li>
                         <li>Redémarrez le Raspberry Pi.</li>
                       </ol>
@@ -856,10 +856,10 @@ export default function APropos({ onChangePage }: AProposProps) {
                         Avant de mettre le Raspberry Pi sous tension, branchez les interfaces de communication nécessaires : le dongle EnOcean sur un port USB, et la passerelle Zigbee sur un autre port USB.
                       </p>
                       <p className="text-amber-400 text-[11px] font-bold">
-                        ⚠️ Important: Les interfaces de transmission radio doivent obligatoirement être raccordées lorsque le Raspberry Pi est hors tension physique.
+                        ⚠️ Important : raccordez les interfaces radio lorsque le Raspberry Pi est hors tension.
                       </p>
                       <p className="text-slate-400 text-[11px] font-light leading-relaxed">
-                        Lors du démarrage du boîtier, notre noyau Sally Home Connect détecte de manière automatique les équipements d'émission connectés et intègre immédiatement leurs canaux virtuels dans sa configuration logique. Une fois le redémarrage terminé, votre logement est paré à échanger localement avec tout appareil EnOcean et Zigbee !
+                        Au démarrage, Sally Home Connect initialise les interfaces radio configurées. Une fois le système prêt, les équipements EnOcean et Zigbee compatibles peuvent être configurés dans l’application.
                       </p>
                     </div>
                   </div>
@@ -876,4 +876,3 @@ export default function APropos({ onChangePage }: AProposProps) {
     </div>
   );
 }
-

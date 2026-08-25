@@ -460,13 +460,13 @@ export default function Fonctionnalites({
         {/* Feature blocks at the bottom layout straight from screenshot */}
         <div className="grid grid-cols-2 md:grid-cols-4 gap-6 pt-12 border-t border-slate-900 text-left mt-16">
           
-          {/* Card 1: 100% Locale / Sans cloud */}
+          {/* Card 1: 100 % locale / Sans cloud */}
           <div className="flex items-start gap-4">
             <div className="p-3 w-11 h-11 rounded-xl bg-indigo-500/10 border border-indigo-500/20 text-indigo-400 flex items-center justify-center shrink-0">
               <Home className="w-5 h-5 animate-pulse" />
             </div>
             <div>
-              <h3 className="text-sm font-bold text-slate-100">100% Locale</h3>
+              <h3 className="text-sm font-bold text-slate-100">100 % locale</h3>
               <p className="text-xs text-slate-500 leading-normal mt-0.5">Sans serveur distant, sans cloud externe.</p>
             </div>
           </div>
@@ -489,7 +489,7 @@ export default function Fonctionnalites({
             </div>
             <div>
               <h3 className="text-sm font-bold text-slate-100">Contrôle vocal</h3>
-              <p className="text-xs text-slate-500 leading-normal mt-0.5">La maison obéit à la voix hors ligne.</p>
+              <p className="text-xs text-slate-500 leading-normal mt-0.5">Pilotez certaines fonctions à la voix, avec un traitement local.</p>
             </div>
           </div>
 
@@ -517,34 +517,34 @@ export default function Fonctionnalites({
               RECHERCHE & EXPÉRIENCE PMR
             </p>
             <h2 className="text-3xl sm:text-4xl font-display font-medium text-slate-100 leading-tight">
-              Une autonomie totale et d&apos;une <br />
-              <span className="font-bold text-cyan-400">fiabilité absolue sans ondes polluantes.</span>
+              Une domotique pensée pour <br />
+              <span className="font-bold text-cyan-400">favoriser l&apos;autonomie au quotidien.</span>
             </h2>
             <p className="text-slate-400 font-light max-w-2xl mx-auto text-sm leading-relaxed">
-              Pour une personne à mobilité réduite (PMR) ou dépendante, la domotique n&apos;est pas un gadget : c&apos;est la clé de l&apos;autonomie. Sally garantit le fonctionnement physique des automatismes même si votre accès Internet tombe en panne.
+              Pour une personne à mobilité réduite (PMR), la domotique peut faciliter certains gestes du quotidien. Les fonctions locales prises en charge par Sally Home Connect sont conçues pour ne pas dépendre d&apos;un service cloud pour leur pilotage courant.
             </p>
           </div>
 
           {/* Value cards for PMR specs */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 text-left pt-6">
             <div className="bg-slate-900/40 p-6 rounded-2xl border border-slate-800/80">
-              <h4 className="text-sm font-bold text-slate-100 mb-2">Technologie EnOcean active</h4>
+              <h4 className="text-sm font-bold text-slate-100 mb-2">Interrupteurs EnOcean sans pile</h4>
               <p className="text-xs text-slate-400 leading-relaxed font-light">
-                Les poussoirs muraux sans fil fonctionnent sur une technologie piezoléectrique sans pile. Aucun besoin d&apos;entretien périodique, aucune panne d&apos;alimentation.
+                Certains interrupteurs EnOcean utilisent la récupération d&apos;énergie mécanique et fonctionnent sans pile, ce qui évite le remplacement périodique d&apos;une batterie dans l&apos;interrupteur.
               </p>
             </div>
 
             <div className="bg-slate-900/40 p-6 rounded-2xl border border-slate-800/80">
-              <h4 className="text-sm font-bold text-slate-100 mb-2">Synthèse de retour auditif</h4>
+              <h4 className="text-sm font-bold text-slate-100 mb-2">Retour vocal</h4>
               <p className="text-xs text-slate-400 leading-relaxed font-light">
-                Garantit aux personnes souffrant de déficience visuelle d&apos;entendre la confirmation physique en français des états des lampes et volets de la maison.
+                Un retour vocal peut confirmer en français certaines commandes et certains états affichés par l&apos;interface, selon les fonctions utilisées.
               </p>
             </div>
 
             <div className="bg-slate-900/40 p-6 rounded-2xl border border-slate-800/80">
-              <h4 className="text-sm font-bold text-slate-100 mb-2">Débranchement externe total</h4>
+              <h4 className="text-sm font-bold text-slate-100 mb-2">Fonctionnement local</h4>
               <p className="text-xs text-slate-400 leading-relaxed font-light">
-                Nos modules n&apos;ont besoin d&apos;aucun abonnement cloud payant mensuel. La protection de votre souveraineté familiale est gravée dans l&apos;architecture même du boîtier.
+                Sally Home Connect est conçu pour fonctionner localement sans abonnement cloud mensuel obligatoire pour le pilotage des équipements compatibles.
               </p>
             </div>
           </div>

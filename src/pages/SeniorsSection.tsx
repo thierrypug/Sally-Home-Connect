@@ -76,7 +76,7 @@ export default function SeniorsSection() {
       icon: <Heart className="w-5 h-5 text-indigo-400" />,
     },
     {
-      title: "Données 100% locales",
+      title: "Données 100 % locales",
       desc: "Vos données restent chez vous.",
       icon: <Lock className="w-5 h-5 text-teal-400" />,
     },
@@ -90,7 +90,7 @@ export default function SeniorsSection() {
   const triggerTabletAction = (actionType: string) => {
     if (actionType === "emergency") {
       setIsEmergencySent(true);
-      setTabletFeedback("Alerte envoyée aux proches ! Message d'assistance transmis instantanément.");
+      setTabletFeedback("Simulation d’alerte activée dans cette démonstration.");
       setTimeout(() => {
         setIsEmergencySent(false);
       }, 5000);
@@ -108,7 +108,7 @@ export default function SeniorsSection() {
       setTabletFeedback(
         nextState 
           ? "Ouverture automatique des volets motorisés." 
-          : "Fermeture sécurisée des volets motorisés."
+          : "Fermeture des volets motorisés."
       );
     }
   };
@@ -124,15 +124,13 @@ export default function SeniorsSection() {
           </p>
 
           <h1 className="text-4xl font-black leading-tight tracking-tight text-white sm:text-5xl">
-            La sérénité d'une maison attentive,
+            Une maison plus simple à piloter,
             <br />
-            conçue pour nos <span className="text-transparent bg-clip-text bg-linear-to-r from-purple-400 to-indigo-400 font-extrabold">aînés.</span>
+            pensée pour les <span className="text-transparent bg-clip-text bg-linear-to-r from-purple-400 to-indigo-400 font-extrabold">seniors.</span>
           </h1>
 
           <p className="text-base font-light leading-relaxed text-slate-400 sm:text-lg">
-            Garantir le confort et la sécurité des seniors sans bousculer leurs habitudes.
-            Notre système local automatise discrètement les tâches simples et alerte instantanément
-            les proches en cas d'anomalie, en garantissant un respect total de la vie privée.
+            Faciliter certains gestes du quotidien sans bouleverser les habitudes. Sally Home Connect permet de centraliser des commandes et des automatismes localement, tout en privilégiant la maîtrise des données dans le logement.
           </p>
         </div>
       </section>
@@ -144,7 +142,7 @@ export default function SeniorsSection() {
         <div className="absolute inset-0 z-0">
           <img
             src={bgImage}
-            alt="Sally Senior Autonomy Background"
+            alt="Maison équipée pour faciliter le quotidien des seniors"
             className={`h-full w-full object-cover transition-all duration-[10s] group-hover/hero:scale-105 ${
               isOrientationLightsOn
                 ? "brightness-105 contrast-[1.15] saturate-[1.35]"

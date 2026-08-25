@@ -51,7 +51,7 @@ export default function Solutions({
       <div className="fixed inset-0 z-0 select-none pointer-events-none">
         <img
           src={SOLUTIONS_BG}
-          alt="Sally Premium Home Background"
+          alt="Maison connectée avec Sally Home Connect"
           className="w-full h-full object-cover opacity-35 saturate-[1.2] brightness-[0.45]"
           referrerPolicy="no-referrer"
         />
@@ -86,7 +86,7 @@ export default function Solutions({
 
             <p className="max-w-2xl text-lg md:text-xl font-light leading-relaxed text-slate-300">
               Sally Home Connect centralise l’éclairage, les volets roulants, le
-              chauffage, les scénarios et la sécurité dans une interface moderne
+              chauffage et les scénarios dans une interface moderne
               fonctionnant localement.
             </p>
           </div>
@@ -100,11 +100,7 @@ export default function Solutions({
             </h2>
 
             <p className="mt-4 max-w-4xl text-sm sm:text-base leading-relaxed text-slate-300 font-light">
-              Sally Home Connect a été conçue pour reprendre le contrôle de sa
-              maison sans dépendre d’un service cloud, d’un abonnement mensuel ou
-              d’une plateforme propriétaire. La solution privilégie le
-              fonctionnement local afin que vos équipements restent utilisables
-              même en cas de coupure Internet.
+              Sally Home Connect privilégie le fonctionnement local et ne nécessite pas de service cloud pour le pilotage courant des équipements compatibles. Les fonctions locales peuvent ainsi rester disponibles même lorsque l’accès Internet est indisponible.
             </p>
           </div>
         </section>
@@ -112,10 +108,10 @@ export default function Solutions({
         {/* INTERACTIVE DASHBOARD PREVIEW */}
         <section className="mx-auto max-w-7xl px-4 pb-20 sm:px-6 lg:px-8">
           <div className="text-center max-w-3xl mx-auto space-y-3 mb-10">
-            <span className="text-[10px] uppercase font-mono tracking-widest text-cyan-400 bg-cyan-500/10 px-3 py-1 rounded-full border border-cyan-500/20 font-bold">CONTRÔLE INTÉGRAL EN DIRECT</span>
-            <h2 className="text-3xl font-bold text-white tracking-tight">Console Interactive d&apos;Expérimentation</h2>
+            <span className="text-[10px] uppercase font-mono tracking-widest text-cyan-400 bg-cyan-500/10 px-3 py-1 rounded-full border border-cyan-500/20 font-bold">DÉMONSTRATION INTERACTIVE</span>
+            <h2 className="text-3xl font-bold text-white tracking-tight">Console interactive de démonstration</h2>
             <p className="text-sm text-slate-400 font-light">
-              Configurez et testez en temps réel l&apos;état global de votre habitat connecté ci-dessous.
+              Testez ci-dessous une simulation de l&apos;interface et de plusieurs commandes de Sally Home Connect.
             </p>
           </div>
           

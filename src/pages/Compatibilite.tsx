@@ -41,9 +41,9 @@ export default function Compatibilite() {
   const [zigbeeTemp, setZigbeeTemp] = useState<number>(21.8);
   const [isPairing, setIsPairing] = useState<boolean>(false);
   const [logs, setLogs] = useState<string[]>([
-    "[SOUVERAIN] Initialisation du coordinateur local Sally...",
-    "[ZIGBEE 3.0] Puce Silicon Labs @ +20dBm prête",
-    "[LOCAL] Aucun cloud requis. Réseau 100% blindé.",
+    "[LOCAL] Initialisation du coordinateur Sally...",
+    "[ZIGBEE] Coordinateur local prêt",
+    "[LOCAL] Aucun cloud requis pour le pilotage.",
   ]);
 
   const addLog = (message: string) => {
@@ -54,7 +54,7 @@ export default function Compatibilite() {
   const handleToggleLight = () => {
     const nextState = !isNodonLightOn;
     setIsNodonLightOn(nextState);
-    addLog(`[NODON SIN-4-2-20] État relais changé -> ${nextState ? "ALLUMÉ" : "ÉTEINT"} (Commande locale 4ms)`);
+    addLog(`[NODON SIN-4-2-20] État relais changé -> ${nextState ? "ALLUMÉ" : "ÉTEINT"} (Commande locale)`);
   };
 
   const handleShutterChange = (value: number) => {
@@ -130,23 +130,23 @@ export default function Compatibilite() {
       brand: "Automatisme Local",
       desc: "Technologie radar millimétrique de pointe capable de détecter même la respiration d'une personne immobile. Parfait pour sécuriser les chutes ou automatiser la lumière.",
       features: ["Immunité aux animaux domestiques", "Portée réglable de 1 à 8 mètres", "Mesure de luminosité en lux"],
-      badge: "Sécurité Active",
+      badge: "Détection",
     },
     {
       id: "smart-plug",
       name: "Prise Connectée avec Analyse de Consommation",
       brand: "Mesure d'Énergie",
-      desc: "Mesurez la puissance instantanée et le cumul journalier en kWh des gros consommateurs de la maison (lave-linge, audiovisuel...). Coupe automatiquement les veilles.",
-      features: ["Relais renforcé certifié 16A", "Bouton d'allumage manuel intégré", "Règle de coupure sur seuil bas"],
-      badge: "Eco-Responsable",
+      desc: "Selon le modèle compatible, une prise Zigbee peut fournir des informations de consommation et permettre le pilotage local de l’appareil raccordé.",
+      features: ["Pilotage marche / arrêt", "Commande manuelle selon le modèle", "Mesure de consommation selon le modèle"],
+      badge: "Suivi énergétique",
     },
     {
       id: "thermostatic-valve",
       name: "Tête Thermostatique de Radiateur à Eau",
       brand: "Régulation Chauffage",
-      desc: "Gérez finement la circulation d'eau chaude de vos radiateurs collectifs ou individuels. Se coordonne avec les rituels quotidiens de Sally pour couper la nuit.",
-      features: ["Affichage LCD discret", "Détection automatique d'ouverture de fenêtre", "Mode déglaçage anti-calcaire"],
-      badge: "Énergie Verte",
+      desc: "Une tête thermostatique Zigbee compatible peut permettre d’ajuster localement la consigne de chauffage et de l’intégrer aux scénarios Sally.",
+      features: ["Réglage de consigne", "Fonctions variables selon le modèle", "Intégration aux scénarios Sally"],
+      badge: "Régulation",
     },
   ];
 
@@ -159,7 +159,7 @@ export default function Compatibilite() {
       <section className="relative mx-auto max-w-7xl px-4 pb-8 pt-10 text-left sm:px-6 lg:px-8 w-full">
         <div className="max-w-3xl space-y-4">
           <p className="font-mono text-xs font-extrabold uppercase leading-none tracking-widest text-[#00f2fe] drop-shadow-[0_2px_10px_rgba(0,242,254,0.3)]">
-            ÉCOSYS-TECH SOUVERAIN & LOCALE
+            ÉCOSYSTÈME DOMOTIQUE LOCAL
           </p>
 
           <h1 className="text-4xl font-black leading-tight tracking-tight text-white sm:text-5xl">
@@ -171,7 +171,7 @@ export default function Compatibilite() {
           </h1>
 
           <p className="text-base font-light leading-relaxed text-slate-400 sm:text-lg">
-            Sally intègre nativement les contrôleurs locaux les plus robustes de la domotique européenne. Coordonnez vos micromodules encastrés NodOn et tout l'écosystème de capteurs Zigbee 3.0 en local pur, pour un temps de réponse instantané et une confidentialité absolue.
+            Sally Home Connect permet d’intégrer des modules NodOn compatibles et des équipements Zigbee pris en charge, avec un pilotage réalisé localement sur votre installation.
           </p>
         </div>
       </section>
@@ -183,7 +183,7 @@ export default function Compatibilite() {
         <div className="absolute inset-0 z-0">
           <img
             src={imageBg}
-            alt="Sally Domotique Hardware Modules"
+            alt="Modules domotiques compatibles avec Sally Home Connect"
             className="h-full w-full object-cover transition-all duration-[10s] scale-100 group-hover/hero:scale-105 brightness-[0.90] contrast-[1.12] saturate-[1.4] filter drop-shadow-[0_0_30px_rgba(34,211,238,0.15)]"
             referrerPolicy="no-referrer"
             onError={() => {
@@ -207,19 +207,19 @@ export default function Compatibilite() {
             {/* Left Box: Value Proposition & Brand Toggle buttons */}
             <div className="flex flex-col justify-center space-y-6 text-left lg:col-span-5">
               <span className="select-none text-xs font-extrabold uppercase leading-none tracking-[0.25em] text-[#00f2fe] drop-shadow-[0_2px_10px_rgba(0,242,254,0.3)] md:text-sm">
-                SOUVERAINETÉ ET ROBUSTESSE
+                DOMOTIQUE LOCALE
               </span>
 
               <h2 className="select-none text-3xl font-bold leading-[1.1] tracking-tight text-white sm:text-4xl">
-                Zéro Cloud.
+                Pilotage local.
                 <br />
                 <span className="mt-1 block bg-linear-to-r from-cyan-400 via-indigo-400 to-purple-400 bg-clip-text font-extrabold text-transparent">
-                  Sélection domotique pro.
+                  NodOn & Zigbee.
                 </span>
               </h2>
 
               <p className="max-w-lg text-sm font-light leading-relaxed text-slate-100 drop-shadow-[0_2px_4px_rgba(0,0,0,0.6)] sm:text-base">
-                Associez la précision industrielle des boîtiers d'encastrement NodOn (conçus et fabriqués en France) à la variété infinie des capteurs Zigbee du marché mondial. Tout transite par la passerelle locale Sally.
+                Associez des micromodules NodOn compatibles à une sélection d’équipements Zigbee. Les commandes sont centralisées localement par Sally Home Connect.
               </p>
 
               {/* brand selection filter for list below */}
@@ -576,7 +576,7 @@ export default function Compatibilite() {
             </h3>
 
             <p className="text-sm font-light leading-relaxed text-slate-400">
-              Chaque périphérique domotique grand public ordinaire renvoie constamment des paquets de données vers des serveurs hébergés en dehors de l'Union européenne. Avec la technologie locale intégrée à Sally, vos signaux radio Zigbee et vos modules NodOn cheminent de façon ultra sécurisée uniquement au sein de votre domicile.
+              Certaines solutions domotiques reposent sur des serveurs distants pour transmettre ou traiter des données. Avec la technologie locale intégrée à Sally, vos signaux radio Zigbee et vos modules NodOn cheminent de façon ultra sécurisée uniquement au sein de votre domicile.
             </p>
           </div>
 
@@ -594,9 +594,9 @@ export default function Compatibilite() {
             <div className="flex h-36 flex-col justify-between rounded-2xl border border-slate-850 bg-slate-900/40 p-5 text-left">
               <span className="text-lg">⚡</span>
               <div>
-                <span className="block text-sm font-bold text-white">Latence Imperceptible</span>
+                <span className="block text-sm font-bold text-white">Traitement local</span>
                 <span className="mt-1 block text-xs leading-tight text-slate-400 font-light">
-                  Passer de 300 millisecondes (transit cloud classique) à moins de 8 millisecondes pour vos capteurs et luminaires physiques.
+                  Le traitement local évite le transit par un service cloud pour les commandes prises en charge par Sally Home Connect.
                 </span>
               </div>
             </div>
@@ -609,13 +609,13 @@ export default function Compatibilite() {
         <div id="compatibility-widget" className="bg-slate-900/40 rounded-3xl border border-slate-800 p-8 text-center max-w-2xl mx-auto">
           <h3 className="text-xl font-bold text-slate-100 mb-2">Un autre modèle ou protocole à vérifier ?</h3>
           <p className="text-slate-400 text-sm mb-6 font-light">
-            Sally est nativement compatible avec plus de 2400 références d'appareils autonomes Zigbee, EnOcean, Z-Wave et Wi-Fi Local.
+            Sally Home Connect prend en charge des équipements Zigbee et EnOcean compatibles. La compatibilité dépend du modèle et de son intégration dans Sally.
           </p>
           <div className="flex gap-2 max-w-md mx-auto">
             <input 
               id="compat-check-input"
               type="text" 
-              placeholder="ex: Legrand, Somfy, Philips Hue, Shelly..." 
+              placeholder="ex : référence ou modèle Zigbee / EnOcean..." 
               className="bg-slate-950 border border-slate-800 rounded-lg px-4 py-2 text-sm text-slate-200 focus:outline-none focus:border-indigo-500 w-full"
             />
             <button id="compat-check-btn" className="bg-indigo-600 hover:bg-indigo-500 text-white px-4.5 py-2 rounded-lg text-sm font-semibold transition-colors shrink-0">
@@ -628,4 +628,3 @@ export default function Compatibilite() {
     </div>
   );
 }
-

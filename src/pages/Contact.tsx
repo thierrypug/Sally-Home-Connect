@@ -77,7 +77,7 @@ export default function Contact() {
             {/* Left box: Hero Content */}
             <div className="flex flex-col justify-center space-y-6 text-left lg:col-span-6">
               <span className="select-none text-xs font-extrabold uppercase leading-none tracking-[0.25em] text-[#00f2fe] drop-shadow-[0_2px_10px_rgba(0,242,254,0.3)] md:text-sm">
-                SOUVERAIN & ACCESSIBLE
+                CONTACT & ACCOMPAGNEMENT
               </span>
 
               <h2 className="select-none text-3xl font-bold leading-[1.1] tracking-tight text-white sm:text-4xl">
@@ -89,7 +89,7 @@ export default function Contact() {
               </h2>
 
               <p className="max-w-lg text-sm font-light leading-relaxed text-slate-100 drop-shadow-[0_2px_4px_rgba(0,0,0,0.6)] sm:text-base">
-                Nous accompagnons nos premiers utilisateurs avec une attention méticuleuse. Partagez votre projet en remplissant le formulaire ou écrivez-nous directement par e-mail.
+                Partagez votre projet, posez une question ou transmettez votre retour sur Sally Home Connect en utilisant le formulaire ou l’adresse e-mail indiquée.
               </p>
 
               {/* High precision aesthetic benefits checkmarks */}
@@ -100,7 +100,7 @@ export default function Contact() {
                   </div>
                   <div>
                     <h4 className="text-sm font-bold text-white">Échange direct sans filtre</h4>
-                    <p className="text-xs text-slate-300">Votre demande arrive directement chez notre équipe technique française.</p>
+                    <p className="text-xs text-slate-300">Votre demande est envoyée directement au contact Sally Home Connect.</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-3">
@@ -108,8 +108,8 @@ export default function Contact() {
                     <CheckCircle2 className="h-3.5 w-3.5" />
                   </div>
                   <div>
-                    <h4 className="text-sm font-bold text-white">Confidentialité totale des données</h4>
-                    <p className="text-xs text-slate-300">Vos informations de contact ne sont jamais partagées ni utilisées à de fins publicitaires.</p>
+                    <h4 className="text-sm font-bold text-white">Respect de vos informations</h4>
+                    <p className="text-xs text-slate-300">Les informations que vous choisissez d’envoyer servent à traiter votre demande et ne sont pas destinées à des fins publicitaires.</p>
                   </div>
                 </div>
               </div>
@@ -120,7 +120,7 @@ export default function Contact() {
                   href="#formulaire-contact" 
                   className="px-6 py-3 bg-indigo-600 hover:bg-indigo-500 rounded-xl text-xs font-bold leading-none cursor-pointer transition-all shadow-lg shadow-indigo-600/20"
                 >
-                  Réserver mon accès
+                  Nous contacter
                 </a>
                 <a 
                   href={`mailto:${emailDestination}`}
@@ -195,10 +195,10 @@ export default function Contact() {
                 <Clock3 className="w-6 h-6" />
               </div>
               <div>
-                <span className="text-xs font-mono text-slate-500 block uppercase">COMMUNAUTÉ PILOTE</span>
-                <h4 className="text-base font-bold text-white">Premiers utilisateurs prioritaires</h4>
+                <span className="text-xs font-mono text-slate-500 block uppercase">CONTACT DIRECT</span>
+                <h4 className="text-base font-bold text-white">Une demande traitée individuellement</h4>
                 <p className="text-xs text-slate-400 mt-1 leading-relaxed font-light">
-                  Chaque demande de pionnier est traitée individuellement sous 24 à 48 heures ouvrées par des experts techniques basés en France.
+                  Chaque message est examiné individuellement afin d’apporter une réponse adaptée à votre question ou à votre projet.
                 </p>
               </div>
             </div>
@@ -212,7 +212,7 @@ export default function Contact() {
                   <MessageSquare className="text-indigo-400 w-5 h-5" /> Formulaire de contact
                 </h4>
                 <p className="text-xs font-light text-slate-400 mt-1">
-                  Les informations saisies pré-rempliront automatiquement votre e-mail d'envoi.
+                  Les informations saisies prérempliront un e-mail dans votre logiciel de messagerie. Vous pourrez le vérifier avant de l’envoyer.
                 </p>
               </div>
 

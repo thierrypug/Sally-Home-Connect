@@ -286,9 +286,9 @@ export default function Accessibilite({
 
           <p className="text-base font-light leading-relaxed text-slate-400 sm:text-lg">
             Pour les personnes en perte d’autonomie, seniors ou PMR, piloter son
-            environnement n’est pas un gadget : c’est la reconquête du
-            quotidien. Notre interface adaptative locale garantit un
-            fonctionnement physique permanent, 100 % hors-ligne.
+            environnement peut contribuer à simplifier le quotidien. Notre
+            interface adaptative privilégie un fonctionnement local et permet de
+            piloter les fonctions prises en charge sans dépendre d’un service cloud.
           </p>
         </div>
       </section>
@@ -297,7 +297,7 @@ export default function Accessibilite({
         <div className="absolute inset-0 z-0">
           <img
             src={BACKGROUND_PMR_IMAGE}
-            alt="Sally PMR Autonomie"
+            alt="Interface domotique Sally Home Connect pour l’autonomie à domicile"
             className={`h-full w-full object-cover transition-all duration-1000 ${
               isLightsOn
                 ? "scale-100 brightness-[0.7] contrast-[1.02] saturate-[1.05]"
@@ -329,10 +329,10 @@ export default function Accessibilite({
               </span>
 
               <h2 className="select-none text-3xl font-bold leading-[1.1] tracking-tight text-white sm:text-4xl">
-                La maison
+                Pilotez la maison
                 <br />
                 <span className="mt-1 block bg-linear-to-r from-purple-500 via-blue-500 to-cyan-400 bg-clip-text font-extrabold text-transparent">
-                  obéit à votre voix.
+                  simplement à la voix.
                 </span>
               </h2>
 
@@ -769,7 +769,7 @@ export default function Accessibilite({
           <div className="relative z-20 mt-8 text-left">
             <div className="grid max-w-full grid-cols-2 gap-4 rounded-2xl border border-slate-950/40 bg-slate-950/80 p-4 shadow-2xl backdrop-blur-md md:grid-cols-4 md:gap-6 md:px-6 md:py-5">
               {[
-                [Home, "100% Locale", "Sans cloud", "text-cyan-400"],
+                [Home, "100 % Locale", "Sans cloud", "text-cyan-400"],
                 [Accessibility, "Accessible", "à tous", "text-indigo-400"],
                 [Mic, "Contrôle", "vocal local", "text-purple-400"],
                 [Smartphone, "Interface", "simplifiée", "text-emerald-400"],
@@ -940,8 +940,8 @@ export default function Accessibilite({
           </h2>
 
           <p className="mx-auto max-w-2xl font-light text-slate-400">
-            Chaque dispositif Sally s’accorde de manière intelligente et
-            matérielle aux nécessités physiques de l’utilisateur.
+            Les fonctions Sally peuvent être configurées pour répondre à différents
+            besoins d’accessibilité et d’autonomie au sein du logement.
           </p>
         </div>
 
@@ -1023,14 +1023,14 @@ export default function Accessibilite({
             </span>
 
             <h3 className="text-2xl font-bold tracking-tight text-white sm:text-3xl">
-              Saviez-vous que vos travaux d’autonomie peuvent être pris en
-              charge jusqu’à 70 % ?
+              Certains travaux d’adaptation peuvent être pris en charge
+              jusqu’à 70 % selon les ressources et les conditions d’éligibilité.
             </h3>
 
             <p className="text-sm font-light leading-relaxed text-slate-300">
-              Depuis janvier 2024, l’aide nationale <strong>MaPrimeAdapt’</strong>, orchestrée par l’Anah, finance
-              l’adaptation des logements pour les seniors et les personnes en
-              situation de handicap.
+              Depuis janvier 2024, <strong>MaPrimeAdapt’</strong>, gérée par l’Anah, peut financer
+              certains travaux d’adaptation du logement pour les personnes âgées
+              ou en situation de handicap, sous conditions.
             </p>
 
             <div className="grid grid-cols-1 gap-4 pt-2 sm:grid-cols-3">
@@ -1039,7 +1039,8 @@ export default function Accessibilite({
                   MAPRIMEADAPT’
                 </h4>
                 <p className="mt-1 text-[11px] text-slate-400">
-                  Prise en charge possible de 50 % à 70 % selon la situation.
+                  Prise en charge de 50 % pour les ménages modestes et de 70 % pour
+                  les ménages très modestes, sous conditions et dans la limite du plafond applicable.
                 </p>
               </div>
 
@@ -1048,7 +1049,8 @@ export default function Accessibilite({
                   AIDES PCH & APA
                 </h4>
                 <p className="mt-1 text-[11px] text-slate-400">
-                  Aides complémentaires possibles selon le profil.
+                  D’autres aides, notamment la PCH ou l’APA, peuvent être mobilisables
+                  selon la situation et les règles de cumul applicables.
                 </p>
               </div>
 
@@ -1057,8 +1059,8 @@ export default function Accessibilite({
                   TVA RÉDUITE
                 </h4>
                 <p className="mt-1 text-[11px] text-slate-400">
-                  Taux réduit possible selon les travaux et conditions
-                  applicables.
+                  Un taux de TVA réduit peut s’appliquer à certains travaux selon les
+                  conditions réglementaires en vigueur.
                 </p>
               </div>
             </div>
@@ -1066,13 +1068,13 @@ export default function Accessibilite({
             <button
               onClick={() =>
                 triggerNotification?.(
-                  "Demande d’informations MaPrimeAdapt’ enregistrée",
+                  "Informations MaPrimeAdapt’ : vérifiez votre éligibilité sur France Rénov’",
                   "success"
                 )
               }
               className="inline-flex cursor-pointer items-center gap-2 rounded-xl bg-linear-to-r from-indigo-600 to-cyan-500 px-6 py-3 text-xs font-semibold text-white shadow-md transition-all hover:bg-opacity-90 sm:text-sm"
             >
-              <span>Faire un diagnostic d’éligibilité gratuit</span>
+              <span>Consulter les conditions d’éligibilité</span>
               <ChevronRight className="h-4 w-4" />
             </button>
           </div>
@@ -1089,10 +1091,10 @@ export default function Accessibilite({
           </div>
 
           <p className="max-w-2xl font-light leading-relaxed text-slate-400">
-            Parce que les routines de vie d’une personne en situation de
-            handicap constituent des données sensibles, Sally conserve
-            l’intégralité des flux à l’intérieur du logement. Aucune analyse
-            vocale, comportementale ou journal d’activité ne quitte votre réseau.
+            Les usages domotiques peuvent révéler des informations personnelles sur
+            les habitudes de vie. L’architecture locale de Sally Home Connect est
+            conçue pour limiter la dépendance aux services cloud et conserver les
+            données de pilotage au sein du réseau du logement.
           </p>
         </div>
       </section>
