@@ -5,7 +5,7 @@
   --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
   --font-display: "Space Grotesk", "Inter", sans-serif;
   --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
-  
+
   --color-sally-purple: #6366f1;
   --color-sally-blue: #3b82f6;
   --color-sally-green: #10b981;
@@ -32,11 +32,11 @@
 
 /* Custom glow effects */
 .sally-glow-purple {
-  box-shadow: 0 0 30px -5px rgba(99, 102, 241, 0.3);
+  box-shadow: 0 0 30px -5px rgba(59, 82, 246, 0.3);
 }
 
 .sally-glow-blue {
-  box-shadow: 0 0 30px -5px rgba(59, 82, 246, 0.3);
+  box-shadow: 0 0 30px -5px rgba(59, 102, 241, 0.3);
 }
 
 .sally-glow-green {
@@ -50,10 +50,19 @@
 html {
   scroll-behavior: smooth;
   background-color: #030712;
+  overflow-x: hidden;
+  width: 100%;
 }
 
 body {
+  margin: 0;
+  width: 100%;
   color: #f3f4f6;
   font-family: var(--font-sans);
+  overflow-x: hidden;
+}
+
+#root {
+  width: 100%;
   overflow-x: hidden;
 }
