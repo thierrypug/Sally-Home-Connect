@@ -1248,7 +1248,7 @@ export default function Accueil({
 
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
 
-          <div className="lg:col-span-6 space-y-6">
+          <div className="lg:col-span-6 space-y-6 text-center lg:text-left">
 
             <p className="text-xs uppercase font-mono tracking-widest text-indigo-400">
               Ce que Sally vous apporte
@@ -1274,7 +1274,7 @@ export default function Accueil({
 
             <button
               onClick={() => onChangePage('solutions')}
-              className="inline-flex items-center gap-2 text-indigo-400 hover:text-indigo-300 font-semibold text-sm transition-all group cursor-pointer focus:outline-none"
+              className="inline-flex items-center gap-2 text-indigo-400 hover:text-indigo-300 font-semibold text-sm transition-all group cursor-pointer focus:outline-none mx-auto lg:mx-0"
             >
 
               <span>Voir les fonctionnalités</span>
