@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Compatibilité de Sally Home Connect : Zigbee, EnOcean, Windows et Raspberry Pi</title>
+  <meta name="description" content="Le matériel qu'il faut pour Sally : un ordinateur, une clé USB Zigbee ou EnOcean, et les appareils déjà vérifiés ou en cours de validation.">
+  <link rel="canonical" href="https://www.sally-home-connect.com/compatibilite/">
+  <meta name="robots" content="index, follow">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Compatibilité de Sally Home Connect : Zigbee, EnOcean, Windows et Raspberry Pi">
+  <meta property="og:description" content="Le matériel qu'il faut pour Sally : un ordinateur, une clé USB Zigbee ou EnOcean, et les appareils déjà vérifiés ou en cours de validation.">
+  <meta property="og:url" content="https://www.sally-home-connect.com/compatibilite/">
+  <meta property="og:image" content="https://www.sally-home-connect.com/icones/partage.jpg">
+  <meta name="theme-color" content="#0B1530">
+  <link rel="icon" href="/icones/favicon.png" type="image/png">
+  <link rel="apple-touch-icon" href="/icones/apple-touch-icon.png">
+  <link rel="preload" href="/polices/manrope.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/polices/bricolage.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="/css/site.css">
+  <script src="/js/site.js" defer></script>
+</head>
+<body>
+  <a class="lien-contenu" href="#contenu">Aller au contenu</a>
+  <header class="entete">
+    <div class="cadre">
+      <a class="marque" href="/"><img src="/icones/logo.webp" alt="" width="40" height="40">Sally Home Connect</a>
+      <button class="bouton-menu" type="button" aria-expanded="false" aria-controls="menu" aria-label="Ouvrir le menu">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+      </button>
+      <nav aria-label="Menu principal">
+        <ul class="menu" id="menu">
+          <li><a href="/fonctionnalites/">Fonctionnalités</a></li>
+          <li><a href="/compatibilite/" aria-current="page">Compatibilité</a></li>
+          <li><a href="/contact/">Contact</a></li>
+          <li><a class="bouton" href="/obtenir/">Obtenir Sally</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="contenu">
+    <section class="section">
+      <div class="cadre">
+        <div class="entete-section">
+          <span class="sur-titre">Compatibilité</span>
+          <h1>Ce qu'il te faut</h1>
+          <p class="chapeau">Sally est vendue seule, sans matériel. Tu choisis tes appareils parmi deux grandes familles sans fil : Zigbee et EnOcean.</p>
+        </div>
+        <div class="grille">
+        <article class="carte">
+          <span class="pictogramme" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4.500" width="18" height="12" rx="2"/><path d="M8.500 20h7M12 16.500V20"/></svg></span>
+          <h3>Un ordinateur chez toi</h3>
+          <p>Un PC sous Windows 10 ou 11 qui reste allumé. Une version pour Raspberry Pi est en préparation.</p>
+        </article>
+        <article class="carte">
+          <span class="pictogramme" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="8" y="2.500" width="8" height="7" rx="1.500"/><path d="M10.500 5.500h.01M13.500 5.500h.01"/><path d="M7 9.500h10v8a4 4 0 0 1-4 4h-2a4 4 0 0 1-4-4z"/></svg></span>
+          <h3>Une clé USB Zigbee</h3>
+          <p>Elle parle aux ampoules, prises, modules et capteurs Zigbee. Sally est mise au point avec la clé Sonoff ZBDongle-P.</p>
+        </article>
+        <article class="carte">
+          <span class="pictogramme" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="8" y="2.500" width="8" height="7" rx="1.500"/><path d="M10.500 5.500h.01M13.500 5.500h.01"/><path d="M7 9.500h10v8a4 4 0 0 1-4 4h-2a4 4 0 0 1-4-4z"/></svg></span>
+          <h3>Une clé USB EnOcean</h3>
+          <p>Elle parle aux modules et interrupteurs EnOcean, souvent sans pile. Sally est mise au point avec la clé EnOcean USB 300.</p>
+        </article>
+        </div>
+        <p class="petit" style="margin-top:18px">Une seule des deux clés suffit. Sally reconnaît la clé toute seule quand tu la branches.</p>
+      </div>
+    </section>
+
+    <section class="section serree">
+      <div class="cadre">
+        <div class="entete-section">
+          <h2>Les appareils</h2>
+          <p>Nous préférons être clairs : voici ce qui a été vérifié avec de vrais appareils, et ce qui est prêt dans Sally mais attend encore sa vérification.</p>
+        </div>
+        <div class="tableau-cadre">
+          <table>
+            <caption>Zigbee</caption>
+            <thead><tr><th scope="col">Type d'appareil</th><th scope="col">Ce que fait Sally</th><th scope="col">État</th></tr></thead>
+            <tbody>
+              <tr><th scope="row">Ampoules</th><td>Allumer, éteindre, régler l'intensité</td><td><span class="etiquette verifie">Vérifié</span></td></tr>
+              <tr><th scope="row">Radiateurs à fil pilote</th><td>Confort, éco, hors gel, arrêt, puissance consommée (module NodOn)</td><td><span class="etiquette verifie">Vérifié</span></td></tr>
+              <tr><th scope="row">Prises</th><td>Allumer, éteindre, mesurer la consommation</td><td><span class="etiquette prevu">En cours de validation</span></td></tr>
+              <tr><th scope="row">Volets roulants</th><td>Monter, descendre, arrêter, choisir une position</td><td><span class="etiquette prevu">En cours de validation</span></td></tr>
+              <tr><th scope="row">Thermostats</th><td>Lire la température, régler la consigne</td><td><span class="etiquette prevu">En cours de validation</span></td></tr>
+              <tr><th scope="row">Capteurs</th><td>Température, mouvement, ouverture, fuite d'eau, fumée</td><td><span class="etiquette prevu">En cours de validation</span></td></tr>
+              <tr><th scope="row">Compteur Linky</th><td>Suivre la consommation de toute la maison (module à brancher)</td><td><span class="etiquette prevu">En cours de validation</span></td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="tableau-cadre" style="margin-top:18px">
+          <table>
+            <caption>EnOcean</caption>
+            <thead><tr><th scope="col">Type d'appareil</th><th scope="col">Ce que fait Sally</th><th scope="col">État</th></tr></thead>
+            <tbody>
+              <tr><th scope="row">Volets roulants</th><td>Monter, descendre, arrêter (module NodOn)</td><td><span class="etiquette verifie">Vérifié</span></td></tr>
+              <tr><th scope="row">Éclairage et prises</th><td>Allumer, éteindre</td><td><span class="etiquette prevu">En cours de validation</span></td></tr>
+              <tr><th scope="row">Interrupteurs sans pile</th><td>Déclencher une routine par un appui</td><td><span class="etiquette prevu">En cours de validation</span></td></tr>
+              <tr><th scope="row">Contacts de porte et de fenêtre</th><td>Savoir si c'est ouvert ou fermé</td><td><span class="etiquette prevu">En cours de validation</span></td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="petit" style="margin-top:18px">Tu as un appareil précis en tête ? <a href="/contact/">Écris-nous</a>, on te dira où il en est.</p>
+      </div>
+    </section>
+
+    <section class="section serree">
+      <div class="cadre">
+        <div class="appel">
+          <h2>Essaie Sally gratuitement</h2>
+          <p>La bêta pour Windows est disponible : 30 jours d'essai complet, sans compte et sans carte bancaire. Une démonstration est incluse pour tout découvrir sans matériel.</p>
+          <div class="actions">
+            <a class="bouton" href="/obtenir/">Télécharger la bêta</a>
+            <a class="bouton secondaire" href="/obtenir/#devenir-testeur">Devenir testeur</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="pied">
+    <div class="cadre">
+      <p>© 2026 Sally Home Connect. Ta maison connectée, sans travaux, et tes données restent chez toi.</p>
+      <ul>
+        <li><a href="/fonctionnalites/">Fonctionnalités</a></li>
+        <li><a href="/compatibilite/">Compatibilité</a></li>
+        <li><a href="/obtenir/">Obtenir Sally</a></li>
+        <li><a href="/contact/">Contact</a></li>
+        <li><a href="/mentions-legales/">Mentions légales</a></li>
+      </ul>
+    </div>
+  </footer>
+</body>
+</html>

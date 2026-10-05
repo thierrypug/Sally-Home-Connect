@@ -1,4 +1,6 @@
-name: Deploy to GitHub Pages
+# Publie le site (dossier site/) sur GitHub Pages à chaque envoi sur la branche main.
+# Le site est fait de fichiers HTML, CSS et JS prêts à l'emploi : aucune construction, rien à installer.
+name: Publier le site sur GitHub Pages
 
 on:
   push:
@@ -15,42 +17,23 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
-  build:
-    runs-on: ubuntu-latest
-
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-
-      - name: Setup Node
-        uses: actions/setup-node@v4
-        with:
-          node-version: 22
-
-      - name: Install
-        run: npm ci
-
-      - name: Build
-        run: npm run build
-
-      - name: Create route pages
-        run: |
-          for route in fonctionnalites solutions accessibilite seniors compatibilite a-propos contact; do
-            mkdir -p "dist/$route"
-            cp dist/index.html "dist/$route/index.html"
-          done
-
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
-        with:
-          path: ./dist
-
-  deploy:
+  publier:
     environment:
       name: github-pages
+      url: ${{ steps.publication.outputs.page_url }}
     runs-on: ubuntu-latest
-    needs: build
-
     steps:
-      - name: Deploy
+      - name: Récupérer le dépôt
+        uses: actions/checkout@v4
+
+      - name: Préparer GitHub Pages
+        uses: actions/configure-pages@v5
+
+      - name: Envoyer le dossier site/
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: ./site
+
+      - name: Publier
+        id: publication
         uses: actions/deploy-pages@v4

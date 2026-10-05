@@ -1,20 +1,14 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://ai.google.dev/static/site-assets/images/share-ais-513315318.png" />
-</div>
+# Site de Sally Home Connect
 
-# Run and deploy your AI Studio app
+Site de présentation de **Sally Home Connect**, la maison connectée 100 % locale :
+https://www.sally-home-connect.com
 
-This contains everything you need to run your app locally.
+- Le site est dans le dossier `site/` : des pages HTML, une feuille de style et un petit script, sans framework,
+  sans cookie, sans outil de mesure d'audience et sans ressource extérieure.
+- Il est publié par GitHub Pages à chaque envoi sur la branche `main` (`.github/workflows/deploy.yml`).
+- Pour le voir sur son ordinateur : `node apercu.cjs`, puis http://localhost:8765
 
-View your app in AI Studio: https://ai.studio/apps/143148b8-11b7-46cd-a907-fb6a89468adc
+La bêta Windows de Sally se télécharge sur
+https://github.com/thierrypug/Sally-Home-Connect-Windows-Beta/releases/latest
 
-## Run Locally
-
-**Prerequisites:**  Node.js
-
-
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+© 2026 Thierry Puglisi (EI) — Sally Home Connect. Textes, images et logo protégés par le droit d'auteur.
