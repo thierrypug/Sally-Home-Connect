@@ -1,9 +1,273 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://www.sally-home-connect.com/</loc></url>
-  <url><loc>https://www.sally-home-connect.com/fonctionnalites/</loc></url>
-  <url><loc>https://www.sally-home-connect.com/compatibilite/</loc></url>
-  <url><loc>https://www.sally-home-connect.com/obtenir/</loc></url>
-  <url><loc>https://www.sally-home-connect.com/contact/</loc></url>
-  <url><loc>https://www.sally-home-connect.com/mentions-legales/</loc></url>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://www.sally-home-connect.com/</loc>
+    <lastmod>2026-10-06</lastmod>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.sally-home-connect.com/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.sally-home-connect.com/en/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.sally-home-connect.com/de/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.sally-home-connect.com/es/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.sally-home-connect.com/it/"/>
+  </url>
+  <url>
+    <loc>https://www.sally-home-connect.com/en/</loc>
+    <lastmod>2026-10-06</lastmod>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.sally-home-connect.com/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.sally-home-connect.com/en/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.sally-home-connect.com/de/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.sally-home-connect.com/es/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.sally-home-connect.com/it/"/>
+  </url>
+  <url>
+    <loc>https://www.sally-home-connect.com/de/</loc>
+    <lastmod>2026-10-06</lastmod>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.sally-home-connect.com/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.sally-home-connect.com/en/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.sally-home-connect.com/de/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.sally-home-connect.com/es/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.sally-home-connect.com/it/"/>
+  </url>
+  <url>
+    <loc>https://www.sally-home-connect.com/es/</loc>
+    <lastmod>2026-10-06</lastmod>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.sally-home-connect.com/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.sally-home-connect.com/en/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.sally-home-connect.com/de/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.sally-home-connect.com/es/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.sally-home-connect.com/it/"/>
+  </url>
+  <url>
+    <loc>https://www.sally-home-connect.com/it/</loc>
+    <lastmod>2026-10-06</lastmod>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.sally-home-connect.com/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.sally-home-connect.com/en/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.sally-home-connect.com/de/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.sally-home-connect.com/es/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.sally-home-connect.com/it/"/>
+  </url>
+  <url>
+    <loc>https://www.sally-home-connect.com/fonctionnalites/</loc>
+    <lastmod>2026-10-06</lastmod>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.sally-home-connect.com/fonctionnalites/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.sally-home-connect.com/en/features/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.sally-home-connect.com/de/funktionen/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.sally-home-connect.com/es/funciones/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.sally-home-connect.com/it/funzionalita/"/>
+  </url>
+  <url>
+    <loc>https://www.sally-home-connect.com/en/features/</loc>
+    <lastmod>2026-10-06</lastmod>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.sally-home-connect.com/fonctionnalites/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.sally-home-connect.com/en/features/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.sally-home-connect.com/de/funktionen/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.sally-home-connect.com/es/funciones/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.sally-home-connect.com/it/funzionalita/"/>
+  </url>
+  <url>
+    <loc>https://www.sally-home-connect.com/de/funktionen/</loc>
+    <lastmod>2026-10-06</lastmod>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.sally-home-connect.com/fonctionnalites/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.sally-home-connect.com/en/features/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.sally-home-connect.com/de/funktionen/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.sally-home-connect.com/es/funciones/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.sally-home-connect.com/it/funzionalita/"/>
+  </url>
+  <url>
+    <loc>https://www.sally-home-connect.com/es/funciones/</loc>
+    <lastmod>2026-10-06</lastmod>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.sally-home-connect.com/fonctionnalites/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.sally-home-connect.com/en/features/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.sally-home-connect.com/de/funktionen/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.sally-home-connect.com/es/funciones/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.sally-home-connect.com/it/funzionalita/"/>
+  </url>
+  <url>
+    <loc>https://www.sally-home-connect.com/it/funzionalita/</loc>
+    <lastmod>2026-10-06</lastmod>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.sally-home-connect.com/fonctionnalites/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.sally-home-connect.com/en/features/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.sally-home-connect.com/de/funktionen/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.sally-home-connect.com/es/funciones/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.sally-home-connect.com/it/funzionalita/"/>
+  </url>
+  <url>
+    <loc>https://www.sally-home-connect.com/compatibilite/</loc>
+    <lastmod>2026-10-06</lastmod>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.sally-home-connect.com/compatibilite/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.sally-home-connect.com/en/compatibility/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.sally-home-connect.com/de/kompatibilitaet/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.sally-home-connect.com/es/compatibilidad/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.sally-home-connect.com/it/compatibilita/"/>
+  </url>
+  <url>
+    <loc>https://www.sally-home-connect.com/en/compatibility/</loc>
+    <lastmod>2026-10-06</lastmod>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.sally-home-connect.com/compatibilite/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.sally-home-connect.com/en/compatibility/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.sally-home-connect.com/de/kompatibilitaet/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.sally-home-connect.com/es/compatibilidad/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.sally-home-connect.com/it/compatibilita/"/>
+  </url>
+  <url>
+    <loc>https://www.sally-home-connect.com/de/kompatibilitaet/</loc>
+    <lastmod>2026-10-06</lastmod>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.sally-home-connect.com/compatibilite/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.sally-home-connect.com/en/compatibility/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.sally-home-connect.com/de/kompatibilitaet/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.sally-home-connect.com/es/compatibilidad/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.sally-home-connect.com/it/compatibilita/"/>
+  </url>
+  <url>
+    <loc>https://www.sally-home-connect.com/es/compatibilidad/</loc>
+    <lastmod>2026-10-06</lastmod>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.sally-home-connect.com/compatibilite/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.sally-home-connect.com/en/compatibility/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.sally-home-connect.com/de/kompatibilitaet/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.sally-home-connect.com/es/compatibilidad/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.sally-home-connect.com/it/compatibilita/"/>
+  </url>
+  <url>
+    <loc>https://www.sally-home-connect.com/it/compatibilita/</loc>
+    <lastmod>2026-10-06</lastmod>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.sally-home-connect.com/compatibilite/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.sally-home-connect.com/en/compatibility/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.sally-home-connect.com/de/kompatibilitaet/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.sally-home-connect.com/es/compatibilidad/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.sally-home-connect.com/it/compatibilita/"/>
+  </url>
+  <url>
+    <loc>https://www.sally-home-connect.com/obtenir/</loc>
+    <lastmod>2026-10-06</lastmod>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.sally-home-connect.com/obtenir/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.sally-home-connect.com/en/get-sally/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.sally-home-connect.com/de/sally-holen/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.sally-home-connect.com/es/obtener/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.sally-home-connect.com/it/ottieni/"/>
+  </url>
+  <url>
+    <loc>https://www.sally-home-connect.com/en/get-sally/</loc>
+    <lastmod>2026-10-06</lastmod>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.sally-home-connect.com/obtenir/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.sally-home-connect.com/en/get-sally/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.sally-home-connect.com/de/sally-holen/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.sally-home-connect.com/es/obtener/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.sally-home-connect.com/it/ottieni/"/>
+  </url>
+  <url>
+    <loc>https://www.sally-home-connect.com/de/sally-holen/</loc>
+    <lastmod>2026-10-06</lastmod>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.sally-home-connect.com/obtenir/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.sally-home-connect.com/en/get-sally/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.sally-home-connect.com/de/sally-holen/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.sally-home-connect.com/es/obtener/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.sally-home-connect.com/it/ottieni/"/>
+  </url>
+  <url>
+    <loc>https://www.sally-home-connect.com/es/obtener/</loc>
+    <lastmod>2026-10-06</lastmod>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.sally-home-connect.com/obtenir/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.sally-home-connect.com/en/get-sally/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.sally-home-connect.com/de/sally-holen/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.sally-home-connect.com/es/obtener/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.sally-home-connect.com/it/ottieni/"/>
+  </url>
+  <url>
+    <loc>https://www.sally-home-connect.com/it/ottieni/</loc>
+    <lastmod>2026-10-06</lastmod>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.sally-home-connect.com/obtenir/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.sally-home-connect.com/en/get-sally/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.sally-home-connect.com/de/sally-holen/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.sally-home-connect.com/es/obtener/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.sally-home-connect.com/it/ottieni/"/>
+  </url>
+  <url>
+    <loc>https://www.sally-home-connect.com/contact/</loc>
+    <lastmod>2026-10-06</lastmod>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.sally-home-connect.com/contact/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.sally-home-connect.com/en/contact/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.sally-home-connect.com/de/kontakt/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.sally-home-connect.com/es/contacto/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.sally-home-connect.com/it/contatti/"/>
+  </url>
+  <url>
+    <loc>https://www.sally-home-connect.com/en/contact/</loc>
+    <lastmod>2026-10-06</lastmod>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.sally-home-connect.com/contact/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.sally-home-connect.com/en/contact/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.sally-home-connect.com/de/kontakt/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.sally-home-connect.com/es/contacto/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.sally-home-connect.com/it/contatti/"/>
+  </url>
+  <url>
+    <loc>https://www.sally-home-connect.com/de/kontakt/</loc>
+    <lastmod>2026-10-06</lastmod>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.sally-home-connect.com/contact/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.sally-home-connect.com/en/contact/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.sally-home-connect.com/de/kontakt/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.sally-home-connect.com/es/contacto/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.sally-home-connect.com/it/contatti/"/>
+  </url>
+  <url>
+    <loc>https://www.sally-home-connect.com/es/contacto/</loc>
+    <lastmod>2026-10-06</lastmod>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.sally-home-connect.com/contact/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.sally-home-connect.com/en/contact/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.sally-home-connect.com/de/kontakt/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.sally-home-connect.com/es/contacto/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.sally-home-connect.com/it/contatti/"/>
+  </url>
+  <url>
+    <loc>https://www.sally-home-connect.com/it/contatti/</loc>
+    <lastmod>2026-10-06</lastmod>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.sally-home-connect.com/contact/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.sally-home-connect.com/en/contact/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.sally-home-connect.com/de/kontakt/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.sally-home-connect.com/es/contacto/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.sally-home-connect.com/it/contatti/"/>
+  </url>
+  <url>
+    <loc>https://www.sally-home-connect.com/mentions-legales/</loc>
+    <lastmod>2026-10-06</lastmod>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.sally-home-connect.com/mentions-legales/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.sally-home-connect.com/en/legal-notice/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.sally-home-connect.com/de/impressum/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.sally-home-connect.com/es/aviso-legal/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.sally-home-connect.com/it/note-legali/"/>
+  </url>
+  <url>
+    <loc>https://www.sally-home-connect.com/en/legal-notice/</loc>
+    <lastmod>2026-10-06</lastmod>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.sally-home-connect.com/mentions-legales/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.sally-home-connect.com/en/legal-notice/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.sally-home-connect.com/de/impressum/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.sally-home-connect.com/es/aviso-legal/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.sally-home-connect.com/it/note-legali/"/>
+  </url>
+  <url>
+    <loc>https://www.sally-home-connect.com/de/impressum/</loc>
+    <lastmod>2026-10-06</lastmod>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.sally-home-connect.com/mentions-legales/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.sally-home-connect.com/en/legal-notice/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.sally-home-connect.com/de/impressum/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.sally-home-connect.com/es/aviso-legal/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.sally-home-connect.com/it/note-legali/"/>
+  </url>
+  <url>
+    <loc>https://www.sally-home-connect.com/es/aviso-legal/</loc>
+    <lastmod>2026-10-06</lastmod>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.sally-home-connect.com/mentions-legales/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.sally-home-connect.com/en/legal-notice/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.sally-home-connect.com/de/impressum/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.sally-home-connect.com/es/aviso-legal/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.sally-home-connect.com/it/note-legali/"/>
+  </url>
+  <url>
+    <loc>https://www.sally-home-connect.com/it/note-legali/</loc>
+    <lastmod>2026-10-06</lastmod>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.sally-home-connect.com/mentions-legales/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.sally-home-connect.com/en/legal-notice/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.sally-home-connect.com/de/impressum/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.sally-home-connect.com/es/aviso-legal/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.sally-home-connect.com/it/note-legali/"/>
+  </url>
 </urlset>

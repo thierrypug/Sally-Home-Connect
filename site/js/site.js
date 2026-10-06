@@ -14,14 +14,22 @@
   }
 
   // --- Boutons « Copier l'adresse » : copient l'adresse e-mail et le disent ---
+  const MESSAGES_COPIE = {
+    fr: ['Adresse copiée ✓', 'Copie impossible : sélectionne l\'adresse'],
+    en: ['Address copied ✓', 'Copy failed: select the address'],
+    de: ['Adresse kopiert ✓', 'Kopieren nicht möglich: Adresse markieren'],
+    es: ['Dirección copiada ✓', 'No se pudo copiar: selecciona la dirección'],
+    it: ['Indirizzo copiato ✓', 'Copia non riuscita: seleziona l\'indirizzo']
+  };
+  const [copie, echec] = MESSAGES_COPIE[document.documentElement.lang] || MESSAGES_COPIE.fr;
   for (const b of document.querySelectorAll('[data-copier]')) {
     const texte = b.textContent;
     b.addEventListener('click', async () => {
       try {
         await navigator.clipboard.writeText(b.dataset.copier);
-        b.textContent = 'Adresse copiée ✓';
+        b.textContent = copie;
       } catch {
-        b.textContent = 'Copie impossible : sélectionne l\'adresse';
+        b.textContent = echec;
       }
       setTimeout(() => { b.textContent = texte; }, 2500);
     });

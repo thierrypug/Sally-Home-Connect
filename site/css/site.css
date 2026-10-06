@@ -375,3 +375,18 @@ body::after {
 .bouton.petit-bouton { padding: 4px 12px; min-height: 0; font-size: var(--t-1, .78125rem); margin-left: 6px; vertical-align: middle; }
 /* En arrivant par le bouton « Devenir testeur », l'encadré ne passe pas sous la barre de menu */
 #devenir-testeur { scroll-margin-top: 90px; }
+
+/* Texte lu par les lecteurs d'écran mais invisible à l'écran (ex. « s'ouvre dans un nouvel onglet ») */
+.visuellement-cache { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; border: 0; }
+
+/* Choix de la langue, dans l'en-tête (liste dépliante, utilisable au clavier sans script) */
+.choix-langue { position: relative; }
+.choix-langue summary { list-style: none; cursor: pointer; display: flex; align-items: center; gap: 6px; padding: 8px 12px; border-radius: 999px; color: var(--texte); font-weight: 700; font-size: .8125rem; background: var(--carte); box-shadow: 0 0 0 1px var(--bord); }
+.choix-langue summary::-webkit-details-marker { display: none; }
+.choix-langue summary svg { width: 16px; height: 16px; }
+.choix-langue summary:hover { background: var(--carte-2); }
+.choix-langue ul { position: absolute; right: 0; top: calc(100% + 8px); min-width: 170px; margin: 0; padding: 6px; list-style: none; border-radius: 16px; background: rgba(10,18,38,.97); box-shadow: 0 0 0 1px var(--bord), 0 18px 40px -12px rgba(0,0,0,.8); z-index: 30; }
+.choix-langue a { display: block; padding: 9px 12px; border-radius: 10px; color: var(--texte-doux); text-decoration: none; font-weight: 650; font-size: .875rem; }
+.choix-langue a:hover { color: #fff; background: var(--carte); }
+.choix-langue a[aria-current="true"] { color: #fff; background: var(--carte-2); }
+@media (max-width: 900px) { .choix-langue { order: 2; } .bouton-menu { order: 3; } .entete nav { order: 4; } }

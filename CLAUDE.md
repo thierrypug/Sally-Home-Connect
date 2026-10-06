@@ -39,7 +39,9 @@ Promesse à tenir partout : « Ta maison connectée, sans travaux, et tes donné
   marchait pas chez les personnes qui lisent leurs e-mails dans le navigateur (cas de l'auteur).
 - On tutoie le visiteur, comme dans l'application.
 - Accessibilité : contrastes suffisants (mesurés à 4,5 au moins pour le texte courant), focus visible, menu utilisable
-  au clavier, `prefers-reduced-motion` respecté, texte de remplacement sur les images.
+  au clavier, `prefers-reduced-motion` respecté, texte de remplacement sur les images, titres sans saut de niveau
+  (au besoin un titre `<h2 class="visuellement-cache">` lu seulement par les lecteurs d'écran), liens qui ouvrent un
+  nouvel onglet annoncés par un texte caché.
 - Même style que l'application : fond bleu nuit, halos de couleur, panneaux de verre, ambre pour ce qui est allumé.
 - Tailles et espaces suivent le nombre d'or, à la demande de l'auteur : les tailles de texte sont les variables
   `--t-1` à `--t5` de `site/css/site.css` (chaque cran vaut le précédent multiplié par 1,272 ; texte courant de 14 px,
@@ -53,6 +55,21 @@ Promesse à tenir partout : « Ta maison connectée, sans travaux, et tes donné
 - Le fond est fixe et animé : un texte peut donc passer devant sa partie la plus claire. Avant d'éclaircir le fond,
   remesurer le contraste des textes avec le point le plus lumineux du fond, y compris à travers un panneau de verre.
   C'est pour cela que les liens sont presque blancs et soulignés, et non bleu clair.
+
+## Langues (depuis le 6 octobre 2026)
+
+- Le français, à la racine de `site/`, est la seule langue qu'on modifie à la main. Les versions anglaise, allemande,
+  espagnole et italienne (`site/en/`, `site/de/`, `site/es/`, `site/it/`, adresses traduites : `/en/features/`,
+  `/de/funktionen/`, `/es/funciones/`, `/it/funzionalita/`…) sont **fabriquées** : ne jamais les modifier à la main.
+- Après toute modification d'une page française : mettre à jour la ligne correspondante de `traductions/textes.cjs`
+  ([français, anglais, allemand, espagnol, italien]), puis `node traduire.cjs`. Le programme s'arrête et liste les
+  textes sans traduction plutôt que de laisser du français dans les autres langues.
+- `traduire.cjs` ajoute aussi à toutes les pages (françaises comprises) le choix de la langue (`<details
+  class="choix-langue">` entre `<!--langues-->`) et les liens `hreflang` (entre `<!--hreflang-->`), traduit les
+  messages préremplis des testeurs (Gmail, Outlook.com, messagerie) et refait `site/sitemap.xml`. Les adresses
+  traduites sont dans `LANGUES` (début de `traduire.cjs`).
+- Les captures de l'application restent en français. La commande vocale de Sally n'existe qu'en français : les pages
+  traduites le disent.
 
 ## Voir le site sur ce PC
 
