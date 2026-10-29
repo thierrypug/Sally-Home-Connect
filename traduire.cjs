@@ -10,13 +10,15 @@ const path = require('path');
 
 const SITE = path.join(__dirname, 'site');
 const ADRESSE = 'https://www.sally-home-connect.com';
-const PAGES = ['', 'fonctionnalites', 'compatibilite', 'obtenir', 'contact', 'mentions-legales'];
+const PAGES = ['', 'fonctionnalites', 'compatibilite', 'obtenir', 'contact', 'mentions-legales', 'acheter'];
+// Pages qu'on n'ouvre que depuis Sally (« Acheter Sally ») : hors du plan du site
+const PAGES_PRIVEES = ['acheter'];
 const LANGUES = {
-  fr: { nom: 'Français', colonne: 0, prefixe: '', etiquette: 'Langue', slugs: { fonctionnalites: 'fonctionnalites', compatibilite: 'compatibilite', obtenir: 'obtenir', contact: 'contact', 'mentions-legales': 'mentions-legales' } },
-  en: { nom: 'English', colonne: 1, prefixe: '/en', etiquette: 'Language', slugs: { fonctionnalites: 'features', compatibilite: 'compatibility', obtenir: 'get-sally', contact: 'contact', 'mentions-legales': 'legal-notice' } },
-  de: { nom: 'Deutsch', colonne: 2, prefixe: '/de', etiquette: 'Sprache', slugs: { fonctionnalites: 'funktionen', compatibilite: 'kompatibilitaet', obtenir: 'sally-holen', contact: 'kontakt', 'mentions-legales': 'impressum' } },
-  es: { nom: 'Español', colonne: 3, prefixe: '/es', etiquette: 'Idioma', slugs: { fonctionnalites: 'funciones', compatibilite: 'compatibilidad', obtenir: 'obtener', contact: 'contacto', 'mentions-legales': 'aviso-legal' } },
-  it: { nom: 'Italiano', colonne: 4, prefixe: '/it', etiquette: 'Lingua', slugs: { fonctionnalites: 'funzionalita', compatibilite: 'compatibilita', obtenir: 'ottieni', contact: 'contatti', 'mentions-legales': 'note-legali' } }
+  fr: { nom: 'Français', colonne: 0, prefixe: '', etiquette: 'Langue', slugs: { fonctionnalites: 'fonctionnalites', compatibilite: 'compatibilite', obtenir: 'obtenir', contact: 'contact', 'mentions-legales': 'mentions-legales', acheter: 'acheter' } },
+  en: { nom: 'English', colonne: 1, prefixe: '/en', etiquette: 'Language', slugs: { fonctionnalites: 'features', compatibilite: 'compatibility', obtenir: 'get-sally', contact: 'contact', 'mentions-legales': 'legal-notice', acheter: 'buy' } },
+  de: { nom: 'Deutsch', colonne: 2, prefixe: '/de', etiquette: 'Sprache', slugs: { fonctionnalites: 'funktionen', compatibilite: 'kompatibilitaet', obtenir: 'sally-holen', contact: 'kontakt', 'mentions-legales': 'impressum', acheter: 'kaufen' } },
+  es: { nom: 'Español', colonne: 3, prefixe: '/es', etiquette: 'Idioma', slugs: { fonctionnalites: 'funciones', compatibilite: 'compatibilidad', obtenir: 'obtener', contact: 'contacto', 'mentions-legales': 'aviso-legal', acheter: 'comprar' } },
+  it: { nom: 'Italiano', colonne: 4, prefixe: '/it', etiquette: 'Lingua', slugs: { fonctionnalites: 'funzionalita', compatibilite: 'compatibilita', obtenir: 'ottieni', contact: 'contatti', 'mentions-legales': 'note-legali', acheter: 'acquista' } }
 };
 
 // Message prérempli des testeurs, et objet du message « question », dans chaque langue
@@ -53,6 +55,8 @@ function poserBlocs(html, langue, page) {
   html = html.replace(/<!--langues-->[\s\S]*?<!--\/langues-->/, '');
   html = html.replace(/\s*<!--hreflang-->[\s\S]*?<!--\/hreflang-->/, '');
   html = html.replace('</nav>', '</nav>\n      ' + blocLangues(langue, page));
+  // Pas de lignes vides entre le choix de la langue et la fin de l'en-tête (elles s'ajoutaient à chaque passage)
+  html = html.replace(/(<!--\/langues-->)\s*\n(\s*<\/div>)/, '$1\n$2');
   if (page !== null) html = html.replace('</head>', '  ' + blocHreflang(page) + '\n</head>');
   return html;
 }
@@ -137,6 +141,6 @@ for (const s of sorties) {
 }
 // Plan du site pour les moteurs de recherche, avec les versions de chaque page
 const jour = new Date().toISOString().slice(0, 10);
-const urls = PAGES.flatMap(page => Object.keys(LANGUES).map(code => `  <url>\n    <loc>${ADRESSE}${chemin(code, page)}</loc>\n    <lastmod>${jour}</lastmod>\n${Object.keys(LANGUES).map(c => `    <xhtml:link rel="alternate" hreflang="${c}" href="${ADRESSE}${chemin(c, page)}"/>`).join('\n')}\n  </url>`));
+const urls = PAGES.filter(page => !PAGES_PRIVEES.includes(page)).flatMap(page => Object.keys(LANGUES).map(code => `  <url>\n    <loc>${ADRESSE}${chemin(code, page)}</loc>\n    <lastmod>${jour}</lastmod>\n${Object.keys(LANGUES).map(c => `    <xhtml:link rel="alternate" hreflang="${c}" href="${ADRESSE}${chemin(c, page)}"/>`).join('\n')}\n  </url>`));
 fs.writeFileSync(path.join(SITE, 'sitemap.xml'), `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">\n${urls.join('\n')}\n</urlset>\n`);
 console.log(`${sorties.length} pages écrites (${PAGES.length} pages × ${Object.keys(LANGUES).length} langues + page introuvable), plan du site refait.`);

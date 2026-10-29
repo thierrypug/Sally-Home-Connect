@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Buy Sally Home Connect</title>
+  <meta name="description" content="Buy your Sally licence: paid once, no subscription, made for your device.">
+  <meta name="robots" content="noindex">
+  <meta name="theme-color" content="#0B1530">
+  <link rel="icon" href="/icones/favicon.png" type="image/png">
+  <link rel="apple-touch-icon" href="/icones/apple-touch-icon.png">
+  <link rel="preload" href="/polices/manrope.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/polices/bricolage.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="/css/site.css">
+  <script src="/js/site.js" defer></script>
+  <script src="/js/acheter.js" defer></script>
+  <!--hreflang-->
+  <link rel="alternate" hreflang="fr" href="https://www.sally-home-connect.com/acheter/">
+  <link rel="alternate" hreflang="en" href="https://www.sally-home-connect.com/en/buy/">
+  <link rel="alternate" hreflang="de" href="https://www.sally-home-connect.com/de/kaufen/">
+  <link rel="alternate" hreflang="es" href="https://www.sally-home-connect.com/es/comprar/">
+  <link rel="alternate" hreflang="it" href="https://www.sally-home-connect.com/it/acquista/">
+  <link rel="alternate" hreflang="x-default" href="https://www.sally-home-connect.com/acheter/">
+  <!--/hreflang-->
+</head>
+<body>
+  <a class="lien-contenu" href="#contenu">Skip to content</a>
+  <header class="entete">
+    <div class="cadre">
+      <a class="marque" href="/en/"><img src="/icones/logo.webp" alt="" width="40" height="40">Sally Home Connect</a>
+      <button class="bouton-menu" type="button" aria-expanded="false" aria-controls="menu" aria-label="Open the menu">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+      </button>
+      <nav aria-label="Main menu">
+        <ul class="menu" id="menu">
+          <li><a href="/en/features/">Features</a></li>
+          <li><a href="/en/compatibility/">Compatibility</a></li>
+          <li><a href="/en/contact/">Contact</a></li>
+          <li><a class="bouton" href="/en/get-sally/">Get Sally</a></li>
+        </ul>
+      </nav>
+      <!--langues--><details class="choix-langue"><summary><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.500 2.700 3.800 5.700 3.800 9s-1.300 6.300-3.800 9c-2.500-2.700-3.800-5.700-3.800-9s1.300-6.300 3.800-9z"/></svg><span class="visuellement-cache">Language : </span>EN</summary><ul><li><a href="/acheter/" hreflang="fr" lang="fr">Français</a></li><li><a href="/en/buy/" hreflang="en" lang="en" aria-current="true">English</a></li><li><a href="/de/kaufen/" hreflang="de" lang="de">Deutsch</a></li><li><a href="/es/comprar/" hreflang="es" lang="es">Español</a></li><li><a href="/it/acquista/" hreflang="it" lang="it">Italiano</a></li></ul></details><!--/langues-->
+    </div>
+  </header>
+
+  <main id="contenu">
+    <section class="section">
+      <div class="cadre">
+        <div class="entete-section">
+          <span class="sur-titre">Buy Sally</span>
+          <h1>Your Sally licence</h1>
+          <p class="chapeau">You pay once, with no subscription. The licence is made for the device you came from: your computer or your Raspberry Pi.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section serree">
+      <div class="cadre">
+        <div class="appel">
+          <h2>Your installation code</h2>
+          <p class="code-achat" id="code-achat" aria-live="polite">—</p>
+          <p class="petit" id="sans-code" hidden>Open this page from Sally: Settings, then "Buy Sally". Your device's code will appear here.</p>
+
+          <div id="vente-ouverte" hidden>
+            <p>Payment is made on a secure page. Then tap "Back to Sally": it activates by itself, and your licence is also sent to you by email.</p>
+            <div class="actions">
+              <a class="bouton" id="payer" href="#">Pay and activate Sally</a>
+            </div>
+          </div>
+
+          <div id="vente-bientot">
+            <h3>Sales open soon</h3>
+            <p>During the beta, write to us with your installation code: we will send you your licence. The message is ready, with your code.</p>
+            <div class="actions">
+              <a class="bouton" id="ecrire-gmail" href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=sallyhomeconnect@gmail.com&amp;su=I%20want%20to%20test%20Sally&amp;body=Hello%2C%0A%0AI'd%20like%20to%20test%20Sally%20Home%20Connect.%0A%0AMy%20first%20name%3A%0AI%20live%20in%3A%20a%20flat%20%2F%20a%20house%0AMy%20home%20automation%20level%3A%20beginner%20%2F%20I%20have%20a%20few%20connected%20devices%20%2F%20I%20already%20use%20Home%20Assistant%2C%20Jeedom%20or%20Domoticz%20%2F%20I'm%20an%20electrician%20or%20installer%0AI%20have%20a%20Windows%2010%20or%2011%20computer%3A%20yes%20%2F%20no%0AI%20have%20a%20home%20automation%20USB%20stick%3A%20Zigbee%20%2F%20EnOcean%20%2F%20none%20%2F%20I%20don't%20know%0AMy%20connected%20devices%20(brands%20and%20models%20if%20I%20know%20them)%3A%0AI%20have%20a%20Raspberry%20Pi%3A%20yes%20%2F%20no%20%2F%20I%20don't%20know%20what%20that%20is%0AWhat%20I%20expect%20from%20a%20smart%20home%3A%0AHow%20I%20heard%20about%20Sally%3A%0A%0AI%20agree%20to%20be%20contacted%20by%20email%20about%20the%20test.%0A" target="_blank" rel="noopener">Write with Gmail <span class="visuellement-cache">(opens in a new tab)</span></a>
+              <a class="bouton secondaire" id="ecrire-messagerie" href="mailto:sallyhomeconnect@gmail.com">With my email app</a>
+            </div>
+            <p class="petit">Or simply write to <strong>sallyhomeconnect@gmail.com</strong> <button class="bouton secondaire petit-bouton" type="button" data-copier="sallyhomeconnect@gmail.com" aria-live="polite">Copy the address</button></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section serree">
+      <div class="cadre">
+        <div class="grille deux">
+        <article class="carte">
+          <h3>One licence per device</h3>
+          <p>Your trial computer and your Raspberry Pi each have their own code. Buy the licence from the device you live with: usually the Raspberry Pi.</p>
+        </article>
+        <article class="carte">
+          <h3>Your home is kept</h3>
+          <p>At the end of the trial, nothing is deleted. As soon as Sally is activated, you get your home, routines and settings back.</p>
+        </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="pied">
+    <div class="cadre">
+      <p>© 2026 Sally Home Connect. Your connected home, no renovation work, and your data stays at home.</p>
+      <ul>
+        <li><a href="/en/features/">Features</a></li>
+        <li><a href="/en/compatibility/">Compatibility</a></li>
+        <li><a href="/en/get-sally/">Get Sally</a></li>
+        <li><a href="/en/contact/">Contact</a></li>
+        <li><a href="/en/legal-notice/">Legal notice</a></li>
+      </ul>
+    </div>
+  </footer>
+</body>
+</html>

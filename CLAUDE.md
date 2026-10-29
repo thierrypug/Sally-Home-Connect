@@ -71,6 +71,18 @@ Promesse à tenir partout : « Ta maison connectée, sans travaux, et tes donné
 - Les captures de l'application restent en français. La commande vocale de Sally n'existe qu'en français : les pages
   traduites le disent.
 
+## Pages et fichiers utilisés par Sally (depuis le 7 octobre 2026)
+
+- `acheter/` (et `/en/buy/`, `/de/kaufen/`, `/es/comprar/`, `/it/acquista/`) : ouverte par le bouton « Acheter Sally »
+  de l'application, avec `?code=…&langue=…&retour=…`. Hors du menu et du plan du site (`PAGES_PRIVEES` dans
+  `traduire.cjs`), `noindex`. Script `site/js/acheter.js` : passe à la page de la langue de Sally, affiche le code
+  d'installation et, tant que `VENTE_OUVERTE` vaut `false`, prépare un message avec ce code. À l'ouverture de la vente
+  (boutique en service, voir `scripts/vendeur/boutique` dans le projet du logiciel) : `VENTE_OUVERTE = true`.
+- `mises-a-jour/sally.json` : fiche signée de la dernière version de Sally, lue une fois par jour par les Sally qui ont
+  autorisé Internet. Elle est fabriquée par `npm run fabriquer-mise-a-jour` dans le projet du logiciel : ne jamais la
+  modifier à la main (la signature ne correspondrait plus et toutes les Sally la refuseraient). Le paquet qu'elle cite
+  doit être publié dans la Release GitHub indiquée avant d'envoyer la fiche sur le site.
+
 ## Voir le site sur ce PC
 
 - `node apercu.cjs`, puis ouvrir http://localhost:8765. Les liens du site commencent par `/` : ouvrir un fichier

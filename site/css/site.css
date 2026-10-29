@@ -390,3 +390,6 @@ body::after {
 .choix-langue a:hover { color: #fff; background: var(--carte); }
 .choix-langue a[aria-current="true"] { color: #fff; background: var(--carte-2); }
 @media (max-width: 900px) { .choix-langue { order: 2; } .bouton-menu { order: 3; } .entete nav { order: 4; } }
+
+/* Page « Acheter » : le code d'installation de l'appareil */
+.code-achat { margin: var(--e2) 0; padding: var(--e2); border-radius: 16px; background: rgba(0,0,0,.25); box-shadow: 0 0 0 1px rgba(255,255,255,.18); font: 700 var(--t1)/1.3 ui-monospace, Consolas, monospace; letter-spacing: .06em; text-align: center; overflow-wrap: anywhere; user-select: all; }

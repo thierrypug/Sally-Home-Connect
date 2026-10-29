@@ -3,13 +3,13 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Probar Sally Home Connect gratis: beta para Windows</title>
-  <meta name="description" content="Descarga la beta de Sally para Windows: 30 días de prueba completa, sin cuenta, con una demostración para descubrirlo todo sin material.">
+  <title>Descargar Sally Home Connect: Raspberry Pi y beta para Windows</title>
+  <meta name="description" content="Descarga Sally para Raspberry Pi, o la beta para Windows para probarla en tu ordenador: 30 días de prueba completa, sin cuenta y sin tarjeta bancaria.">
   <link rel="canonical" href="https://www.sally-home-connect.com/es/obtener/">
   <meta name="robots" content="index, follow">
   <meta property="og:type" content="website">
-  <meta property="og:title" content="Probar Sally Home Connect gratis: beta para Windows">
-  <meta property="og:description" content="Descarga la beta de Sally para Windows: 30 días de prueba completa, sin cuenta, con una demostración para descubrirlo todo sin material.">
+  <meta property="og:title" content="Descargar Sally Home Connect: Raspberry Pi y beta para Windows">
+  <meta property="og:description" content="Descarga Sally para Raspberry Pi, o la beta para Windows para probarla en tu ordenador: 30 días de prueba completa, sin cuenta y sin tarjeta bancaria.">
   <meta property="og:url" content="https://www.sally-home-connect.com/es/obtener/">
   <meta property="og:image" content="https://www.sally-home-connect.com/icones/partage.jpg">
   <meta name="theme-color" content="#0B1530">
@@ -45,8 +45,6 @@
         </ul>
       </nav>
       <!--langues--><details class="choix-langue"><summary><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.500 2.700 3.800 5.700 3.800 9s-1.300 6.300-3.800 9c-2.500-2.700-3.800-5.700-3.800-9s1.300-6.300 3.800-9z"/></svg><span class="visuellement-cache">Idioma : </span>ES</summary><ul><li><a href="/obtenir/" hreflang="fr" lang="fr">Français</a></li><li><a href="/en/get-sally/" hreflang="en" lang="en">English</a></li><li><a href="/de/sally-holen/" hreflang="de" lang="de">Deutsch</a></li><li><a href="/es/obtener/" hreflang="es" lang="es" aria-current="true">Español</a></li><li><a href="/it/ottieni/" hreflang="it" lang="it">Italiano</a></li></ul></details><!--/langues-->
-      
-      
     </div>
   </header>
 
@@ -56,12 +54,13 @@
         <div class="entete-section">
           <span class="sur-titre">Obtener Sally</span>
           <h1>Prueba Sally gratis</h1>
-          <p class="chapeau">La beta de Sally para Windows está disponible. Tienes 30 días de prueba completa, sin cuenta y sin tarjeta bancaria. Incluye una demostración para descubrirlo todo, incluso sin material.</p>
+          <p class="chapeau">Sally está disponible para Raspberry Pi, la versión con la que se vive, y en beta para Windows, para probarla en tu ordenador. Tienes 30 días de prueba completa, sin cuenta y sin tarjeta bancaria.</p>
           <div class="actions">
-            <a class="bouton" href="https://github.com/thierrypug/Sally-Home-Connect-Windows-Beta/releases/latest" rel="noopener">Descargar la beta para Windows</a>
+            <a class="bouton" href="https://github.com/thierrypug/Sally-Home-Connect-Raspberry-Pi/releases/latest" rel="noopener">Descargar para Raspberry Pi</a>
+            <a class="bouton secondaire" href="https://github.com/thierrypug/Sally-Home-Connect-Windows-Beta/releases/latest" rel="noopener">Descargar la beta para Windows</a>
             <a class="bouton secondaire" href="#devenir-testeur">Ser probador</a>
           </div>
-          <p class="petit">Windows 10 u 11 (64 bits), unos 80 MB. El archivo está publicado en GitHub, donde también encontrarás la guía de instalación y las novedades de cada versión.</p>
+          <p class="petit">Raspberry Pi 4 o 5, tarjeta microSD de 16 GB y cable de red: unos 870 MB, que se escriben con Raspberry Pi Imager, sin ningún comando. Windows 10 u 11 (64 bits): unos 250 MB, con una demostración para descubrirlo todo sin material. Los archivos están publicados en GitHub, con las guías de instalación y las novedades de cada versión.</p>
         </div>
       </div>
     </section>
@@ -84,7 +83,21 @@
     <section class="section serree">
       <div class="cadre">
         <div class="entete-section">
-          <h2>Instalar Sally en tres pasos</h2>
+          <h2>En una Raspberry Pi, en tres pasos</h2>
+          <p>Ningún comando: una imagen que escribir en una tarjeta microSD, y ya está.</p>
+        </div>
+        <ol class="etapes">
+          <li><h3>Escribe la tarjeta</h3><p>Con Raspberry Pi Imager, el programa gratuito de la fundación Raspberry Pi: elige «Usar imagen personalizada», luego el archivo descargado y tu tarjeta microSD.</p></li>
+          <li><h3>Conecta la Raspberry Pi</h3><p>Pon la tarjeta, conecta el cable de red al router, tus llaves Zigbee o EnOcean y luego la alimentación. Espera tres minutos.</p></li>
+          <li><h3>Abre Sally</h3><p>En tu teléfono o tu ordenador, abre https://sally.local o https://192.168.1.200. Un pequeño asistente te recibe: idioma, código de acceso, nombre de tu casa.</p></li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="section serree">
+      <div class="cadre">
+        <div class="entete-section">
+          <h2>En Windows, en tres pasos</h2>
           <p>Nada más que instalar: todo lo que Sally necesita está en el archivo.</p>
         </div>
         <ol class="etapes">
@@ -101,7 +114,7 @@
         <article class="carte">
           <span class="pictogramme vert" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6.500h16v10H4z"/><path d="M8.500 20h7M12 16.500V20"/></svg></span>
           <h3>Windows para probarla, Raspberry Pi para vivir con ella</h3>
-          <p>La beta para Windows sirve para descubrir Sally. Para adoptarla, la versión final funcionará en una Raspberry Pi: una cajita silenciosa que se queda encendida día y noche, sin pantalla ni teclado.</p>
+          <p>La beta para Windows sirve para descubrir Sally. Para adoptarla, instálala en una Raspberry Pi: una cajita silenciosa que se queda encendida día y noche, sin pantalla ni teclado. Tu casa de prueba pasa a ella con un solo botón.</p>
         </article>
         <article class="carte">
           <span class="pictogramme chaud" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M7 9a3 3 0 1 0 0 6c2 0 3-1.500 5-3s3-3 5-3a3 3 0 1 1 0 6c-2 0-3-1.500-5-3S9 9 7 9z"/></svg></span>
